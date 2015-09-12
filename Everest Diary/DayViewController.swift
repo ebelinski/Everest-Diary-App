@@ -45,7 +45,7 @@ class DayViewController: UIViewController {
     }
     
     @IBAction func didPressPainButton(sender: AnyObject) {
-        if (sender.tag == 2) {
+        if sender.tag == 2 {
             self.navigationController?.popToRootViewControllerAnimated(true)
         }
     }
