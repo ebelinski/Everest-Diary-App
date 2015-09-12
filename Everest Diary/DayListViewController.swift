@@ -58,8 +58,8 @@ class DayListViewController: UITableViewController, NSFetchedResultsControllerDe
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow() {
-            let object = self.fetchedResultsController.objectAtIndexPath(indexPath) as! NSManagedObject
-            (segue.destinationViewController as! DayViewController).detailItem = object
+                let object = self.fetchedResultsController.objectAtIndexPath(indexPath) as! NSManagedObject
+                (segue.destinationViewController as! DayViewController).detailItem = object
             }
         }
     }

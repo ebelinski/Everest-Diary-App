@@ -71,10 +71,10 @@
             </objects>
             <point key="canvasLocation" x="-52.5" y="20.5"/>
         </scene>
-        <!--Master-->
+        <!--Day List-->
         <scene sceneID="VgW-fR-Quf">
             <objects>
-                <tableViewController title="Master" id="pGg-6v-bdr" customClass="DayListViewController" customModule="Everest_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Day List" id="pGg-6v-bdr" customClass="DayListViewController" customModule="Everest_Diary" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="mLL-gJ-YKr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -118,10 +118,10 @@
             </objects>
             <point key="canvasLocation" x="421.5" y="20.5"/>
         </scene>
-        <!--Detail-->
+        <!--Day First Page-->
         <scene sceneID="Cn3-H9-jdl">
             <objects>
-                <viewController title="Detail" id="Ah7-4n-0Wa" customClass="DayViewController" customModule="Everest_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Day First Page" id="Ah7-4n-0Wa" customClass="DayViewController" customModule="Everest_Diary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cIm-e0-J51"/>
                         <viewControllerLayoutGuide type="bottom" id="a0L-h9-sNL"/>
@@ -142,7 +142,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qW-W2-gIw">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qW-W2-gIw">
                                 <rect key="frame" x="69.5" y="206" width="39" height="30"/>
                                 <state key="normal" title="Good">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -151,7 +151,7 @@
                                     <action selector="didPressFeelingButton:" destination="Ah7-4n-0Wa" eventType="touchUpInside" id="hVZ-74-C8A"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BuL-qO-Nxj">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BuL-qO-Nxj">
                                 <rect key="frame" x="169.5" y="206" width="36" height="30"/>
                                 <state key="normal" title="Okay">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -160,13 +160,16 @@
                                     <action selector="didPressFeelingButton:" destination="Ah7-4n-0Wa" eventType="touchUpInside" id="i7u-cM-n1z"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOI-Gs-m6V">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOI-Gs-m6V">
                                 <rect key="frame" x="216" y="415" width="30" height="30"/>
                                 <state key="normal" title="No">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="didPressPainButton:" destination="Ah7-4n-0Wa" eventType="touchUpInside" id="IBT-EU-2da"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOp-in-gji">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOp-in-gji">
                                 <rect key="frame" x="269.5" y="206" width="30" height="30"/>
                                 <state key="normal" title="Bad">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -175,12 +178,13 @@
                                     <action selector="didPressFeelingButton:" destination="Ah7-4n-0Wa" eventType="touchUpInside" id="EpR-Il-31V"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSd-jP-01o">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSd-jP-01o">
                                 <rect key="frame" x="115" y="414" width="30" height="30"/>
                                 <state key="normal" title="Yes">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="didPressPainButton:" destination="Ah7-4n-0Wa" eventType="touchUpInside" id="wSQ-sR-0Ls"/>
                                     <segue destination="sTu-Vz-i3u" kind="show" identifier="dayToBody" id="xke-H5-waX"/>
                                 </connections>
                             </button>
@@ -219,10 +223,10 @@
             </objects>
             <point key="canvasLocation" x="880.5" y="20.5"/>
         </scene>
-        <!--Where is your pain?-->
+        <!--Body-->
         <scene sceneID="KpT-bd-QWH">
             <objects>
-                <viewController id="sTu-Vz-i3u" customClass="BodyViewController" customModule="Everest_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Body" id="sTu-Vz-i3u" customClass="BodyViewController" customModule="Everest_Diary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EpJ-O5-CGE"/>
                         <viewControllerLayoutGuide type="bottom" id="abR-Tk-R8z"/>
@@ -240,16 +244,26 @@
                                     <segue destination="LBK-7g-VIu" kind="show" id="3nQ-KQ-NdG"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[body goes here]" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHR-y7-MXT">
-                                <rect key="frame" x="123" y="213" width="128" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yLd-Ab-azr">
+                                <rect key="frame" x="16" y="80" width="343" height="490"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QkZ-Yj-oDl">
+                                <rect key="frame" x="303" y="80" width="47" height="30"/>
+                                <state key="normal" title="Switch">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="Erv-dW-BmW" secondAttribute="centerX" id="F1T-mG-jtP"/>
+                            <constraint firstItem="yLd-Ab-azr" firstAttribute="top" secondItem="EpJ-O5-CGE" secondAttribute="bottom" constant="16" id="QHI-h0-iSW"/>
+                            <constraint firstItem="QkZ-Yj-oDl" firstAttribute="top" secondItem="EpJ-O5-CGE" secondAttribute="bottom" constant="16" id="RHr-mB-e7n"/>
+                            <constraint firstItem="Erv-dW-BmW" firstAttribute="top" secondItem="yLd-Ab-azr" secondAttribute="bottom" constant="19" id="RdX-OR-LWD"/>
+                            <constraint firstItem="yLd-Ab-azr" firstAttribute="leading" secondItem="ZMM-Jx-fMU" secondAttribute="leading" constant="16" id="dbK-dW-tR4"/>
+                            <constraint firstAttribute="trailing" secondItem="QkZ-Yj-oDl" secondAttribute="trailing" constant="25" id="faC-n4-ZOy"/>
+                            <constraint firstAttribute="trailing" secondItem="yLd-Ab-azr" secondAttribute="trailing" constant="16" id="tPZ-FG-yzT"/>
                             <constraint firstItem="abR-Tk-R8z" firstAttribute="top" secondItem="Erv-dW-BmW" secondAttribute="bottom" constant="48" id="ycK-Nw-uiS"/>
                         </constraints>
                     </view>
@@ -260,10 +274,10 @@
             </objects>
             <point key="canvasLocation" x="1359.5" y="20.5"/>
         </scene>
-        <!--What are your symptoms?-->
+        <!--Symptoms-->
         <scene sceneID="rSX-2K-U1Q">
             <objects>
-                <viewController id="LBK-7g-VIu" customClass="SymptomsViewController" customModule="Everest_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Symptoms" id="LBK-7g-VIu" customClass="SymptomsViewController" customModule="Everest_Diary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7vS-yr-vjm"/>
                         <viewControllerLayoutGuide type="bottom" id="RYe-1u-8RQ"/>
@@ -295,10 +309,10 @@
             </objects>
             <point key="canvasLocation" x="1831.5" y="20.5"/>
         </scene>
-        <!--Describe your symptoms-->
+        <!--Symptoms Descriptions-->
         <scene sceneID="I9H-C1-IoT">
             <objects>
-                <viewController id="In4-w2-j8L" customClass="SymptomsDescribeViewController" customModule="Everest_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Symptoms Descriptions" id="In4-w2-j8L" customClass="SymptomsDescribeViewController" customModule="Everest_Diary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XN5-0q-sHR"/>
                         <viewControllerLayoutGuide type="bottom" id="G8Z-Ui-Kcm"/>
@@ -330,10 +344,10 @@
             </objects>
             <point key="canvasLocation" x="2316.5" y="20.5"/>
         </scene>
-        <!--Media-->
+        <!--Symptoms Media-->
         <scene sceneID="hy8-hn-r6Y">
             <objects>
-                <viewController id="YsW-VX-oMf" customClass="SymptomsMediaViewController" customModule="Everest_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Symptoms Media" id="YsW-VX-oMf" customClass="SymptomsMediaViewController" customModule="Everest_Diary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PmM-RP-tU7"/>
                         <viewControllerLayoutGuide type="bottom" id="ptR-We-GZ3"/>
