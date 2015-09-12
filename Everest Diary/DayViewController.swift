@@ -35,6 +35,9 @@ class DayViewController: UIViewController {
         labelPainQuestion.hidden = true
         buttonPainYes.hidden = true
         buttonPainNo.hidden = true
+        labelPainQuestion.alpha = 0
+        buttonPainYes.alpha = 0
+        buttonPainNo.alpha = 0
     }
     
     func configureView() {
@@ -46,6 +49,13 @@ class DayViewController: UIViewController {
         labelPainQuestion.hidden = false
         buttonPainYes.hidden = false
         buttonPainNo.hidden = false
+        
+        UIView.animateWithDuration(1, animations: {
+            self.labelPainQuestion.alpha = 1
+            self.buttonPainYes.alpha = 1
+            self.buttonPainNo.alpha = 1
+            
+        })
     }
     
     @IBAction func didPressPainButton(sender: AnyObject) {
