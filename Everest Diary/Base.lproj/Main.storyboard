@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome to Everest Diary" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wV-ik-oAs">
-                                <rect key="frame" x="89" y="200" width="197" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Everest Diary" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wV-ik-oAs">
+                                <rect key="frame" x="89" y="156" width="197" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="197" id="LTK-03-UOM"/>
                                     <constraint firstAttribute="height" constant="21" id="WWn-pL-By0"/>
@@ -26,8 +26,8 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peR-dE-Xje">
-                                <rect key="frame" x="86" y="341" width="203" height="77"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peR-dE-Xje">
+                                <rect key="frame" x="86" y="297" width="203" height="77"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="203" id="JTz-Ll-XJm"/>
                                     <constraint firstAttribute="height" constant="77" id="mbI-dt-Lqo"/>
