@@ -54,7 +54,6 @@ class DayViewController: UIViewController {
             self.labelPainQuestion.alpha = 1
             self.buttonPainYes.alpha = 1
             self.buttonPainNo.alpha = 1
-            
         })
     }
     

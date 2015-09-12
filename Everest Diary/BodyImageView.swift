@@ -18,6 +18,10 @@ class BodyImageView: UIImageView {
             let point: CGPoint = touch.locationInView(self)
             
             let dot = BodyDotView(frame: CGRect(x: point.x-dotSize/2, y: point.y-dotSize/2, width: dotSize, height: dotSize))
+            dot.alpha = 0
+            UIView.animateWithDuration(1, animations: {
+                dot.alpha = 1
+            })
             self.addSubview(dot)
             
             if let bodyVC = bodyVC {
