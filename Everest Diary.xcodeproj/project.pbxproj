@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B6313D691BA4804D009DA8E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6313D681BA4804D009DA8E8 /* AppDelegate.swift */; };
-		B6313D6C1BA4804D009DA8E8 /* Everest_Diary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6313D6A1BA4804D009DA8E8 /* Everest_Diary.xcdatamodeld */; };
 		B6313D6E1BA4804D009DA8E8 /* DayListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6313D6D1BA4804D009DA8E8 /* DayListViewController.swift */; };
 		B6313D701BA4804D009DA8E8 /* DayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6313D6F1BA4804D009DA8E8 /* DayViewController.swift */; };
 		B6313D731BA4804D009DA8E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6313D711BA4804D009DA8E8 /* Main.storyboard */; };
@@ -36,7 +35,6 @@
 		B6313D631BA4804D009DA8E8 /* Everest Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Everest Diary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6313D671BA4804D009DA8E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6313D681BA4804D009DA8E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B6313D6B1BA4804D009DA8E8 /* Everest_Diary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Everest_Diary.xcdatamodel; sourceTree = "<group>"; };
 		B6313D6D1BA4804D009DA8E8 /* DayListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayListViewController.swift; sourceTree = "<group>"; };
 		B6313D6F1BA4804D009DA8E8 /* DayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewController.swift; sourceTree = "<group>"; };
 		B6313D721BA4804D009DA8E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -96,7 +94,6 @@
 				B6313D711BA4804D009DA8E8 /* Main.storyboard */,
 				B6313D741BA4804D009DA8E8 /* Images.xcassets */,
 				B6313D761BA4804D009DA8E8 /* LaunchScreen.xib */,
-				B6313D6A1BA4804D009DA8E8 /* Everest_Diary.xcdatamodeld */,
 				B6313D661BA4804D009DA8E8 /* Supporting Files */,
 			);
 			path = "Everest Diary";
@@ -241,7 +238,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6313D6C1BA4804D009DA8E8 /* Everest_Diary.xcdatamodeld in Sources */,
 				B6313D8E1BA481B4009DA8E8 /* WelcomeViewController.swift in Sources */,
 				B6313D911BA48458009DA8E8 /* BodyViewController.swift in Sources */,
 				B6313D991BA48564009DA8E8 /* SymptomsMediaViewController.swift in Sources */,
@@ -445,6 +441,7 @@
 				B6313D891BA4804D009DA8E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B6313D8A1BA4804D009DA8E8 /* Build configuration list for PBXNativeTarget "Everest DiaryTests" */ = {
 			isa = XCConfigurationList;
@@ -453,21 +450,9 @@
 				B6313D8C1BA4804D009DA8E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		B6313D6A1BA4804D009DA8E8 /* Everest_Diary.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				B6313D6B1BA4804D009DA8E8 /* Everest_Diary.xcdatamodel */,
-			);
-			currentVersion = B6313D6B1BA4804D009DA8E8 /* Everest_Diary.xcdatamodel */;
-			path = Everest_Diary.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = B6313D5B1BA4804D009DA8E8 /* Project object */;
 }
