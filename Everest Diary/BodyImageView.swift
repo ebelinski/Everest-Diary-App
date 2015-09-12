@@ -11,12 +11,13 @@ import UIKit
 class BodyImageView: UIImageView {
     
     var bodyVC: BodyViewController?
+    let dotSize: CGFloat = 30
 
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         if let touch = touches.first as? UITouch {
             let point: CGPoint = touch.locationInView(self)
             
-            let dot = BodyDotView(frame: CGRect(x: point.x-25, y: point.y-25, width: 50, height: 50))
+            let dot = BodyDotView(frame: CGRect(x: point.x-dotSize/2, y: point.y-dotSize/2, width: dotSize, height: dotSize))
             self.addSubview(dot)
             
             if let bodyVC = bodyVC {

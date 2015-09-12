@@ -29,10 +29,10 @@ class BodyDotView: UIView {
         var endAngle: Float = 0.0
         let radius = (CGFloat(self.frame.size.width) - CGFloat(1.5)) / 2
         
-        var fillColor = UIColor.whiteColor().CGColor
+        var fillColor = UIColor.blueColor().CGColor
         var pathDrawType = kCGPathFillStroke
         
-        CGContextSetStrokeColorWithColor(context, UIColor.whiteColor().CGColor)
+        CGContextSetStrokeColorWithColor(context, UIColor.blueColor().CGColor)
         CGContextSetLineWidth(context, CGFloat(1.5))
         CGContextSetFillColorWithColor(context, fillColor)
         CGContextAddArc(context,
