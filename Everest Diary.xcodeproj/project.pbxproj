@@ -32,6 +32,8 @@
 		B6313DAF1BA4B512009DA8E8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6313DAE1BA4B512009DA8E8 /* AudioToolbox.framework */; };
 		B6313DB11BA4BB5C009DA8E8 /* BodyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6313DB01BA4BB5C009DA8E8 /* BodyImageView.swift */; };
 		B6313DB41BA4C75F009DA8E8 /* BodyDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6313DB31BA4C75F009DA8E8 /* BodyDotView.swift */; };
+		B6ECA2E71BA4DF9F00910998 /* SymptomsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6ECA2E51BA4DF9F00910998 /* SymptomsTableViewController.swift */; };
+		B6ECA2E81BA4DF9F00910998 /* SymptomsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6ECA2E61BA4DF9F00910998 /* SymptomsTableViewController.xib */; };
 		C7756FF59C5C54343A926A8A /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A3FDE3BFB7AD154B31468C /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -78,6 +80,8 @@
 		B6313DAE1BA4B512009DA8E8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		B6313DB01BA4BB5C009DA8E8 /* BodyImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyImageView.swift; sourceTree = "<group>"; };
 		B6313DB31BA4C75F009DA8E8 /* BodyDotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyDotView.swift; sourceTree = "<group>"; };
+		B6ECA2E51BA4DF9F00910998 /* SymptomsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomsTableViewController.swift; sourceTree = "<group>"; };
+		B6ECA2E61BA4DF9F00910998 /* SymptomsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SymptomsTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +167,7 @@
 			children = (
 				B6313D681BA4804D009DA8E8 /* AppDelegate.swift */,
 				B6313D8F1BA481C1009DA8E8 /* Controllers */,
+				B6ECA2E41BA4DF5E00910998 /* Helper Controllers */,
 				B6313DB21BA4BB62009DA8E8 /* Views */,
 				B6313D711BA4804D009DA8E8 /* Main.storyboard */,
 				B6313D741BA4804D009DA8E8 /* Images.xcassets */,
@@ -218,6 +223,15 @@
 				B6313DB31BA4C75F009DA8E8 /* BodyDotView.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		B6ECA2E41BA4DF5E00910998 /* Helper Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B6ECA2E51BA4DF9F00910998 /* SymptomsTableViewController.swift */,
+				B6ECA2E61BA4DF9F00910998 /* SymptomsTableViewController.xib */,
+			);
+			name = "Helper Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,6 +320,7 @@
 				B6313D731BA4804D009DA8E8 /* Main.storyboard in Resources */,
 				B6313D781BA4804D009DA8E8 /* LaunchScreen.xib in Resources */,
 				B6313D751BA4804D009DA8E8 /* Images.xcassets in Resources */,
+				B6ECA2E81BA4DF9F00910998 /* SymptomsTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +396,7 @@
 				B6313DB11BA4BB5C009DA8E8 /* BodyImageView.swift in Sources */,
 				B6313DB41BA4C75F009DA8E8 /* BodyDotView.swift in Sources */,
 				B6313D701BA4804D009DA8E8 /* DayViewController.swift in Sources */,
+				B6ECA2E71BA4DF9F00910998 /* SymptomsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
