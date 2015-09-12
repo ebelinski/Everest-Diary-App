@@ -43,7 +43,6 @@ class DayViewController: UIViewController {
     }
     
     @IBAction func didPressFeelingButton(sender: AnyObject) {
-        
         labelPainQuestion.hidden = false
         buttonPainYes.hidden = false
         buttonPainNo.hidden = false

@@ -232,19 +232,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Erv-dW-BmW">
-                                <rect key="frame" x="170" y="214" width="36" height="30"/>
-                                <state key="normal" title="Body">
+                                <rect key="frame" x="156" y="589" width="62" height="30"/>
+                                <state key="normal" title="Continue">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="LBK-7g-VIu" kind="show" id="3nQ-KQ-NdG"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[body goes here]" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHR-y7-MXT">
+                                <rect key="frame" x="123" y="213" width="128" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="Erv-dW-BmW" secondAttribute="centerX" id="F1T-mG-jtP"/>
-                            <constraint firstItem="Erv-dW-BmW" firstAttribute="top" secondItem="EpJ-O5-CGE" secondAttribute="bottom" constant="150" id="fEC-8I-6vL"/>
+                            <constraint firstItem="abR-Tk-R8z" firstAttribute="top" secondItem="Erv-dW-BmW" secondAttribute="bottom" constant="48" id="ycK-Nw-uiS"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Where is your pain?" id="ghO-Qp-ID1"/>
@@ -324,7 +330,7 @@
             </objects>
             <point key="canvasLocation" x="2316.5" y="20.5"/>
         </scene>
-        <!--Title-->
+        <!--Media-->
         <scene sceneID="hy8-hn-r6Y">
             <objects>
                 <viewController id="YsW-VX-oMf" customClass="SymptomsMediaViewController" customModule="Everest_Diary" customModuleProvider="target" sceneMemberID="viewController">
@@ -352,7 +358,7 @@
                             <constraint firstItem="mEL-3L-d0K" firstAttribute="top" secondItem="PmM-RP-tU7" secondAttribute="bottom" constant="150" id="oQC-Fh-SV7"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="nuZ-je-uSy"/>
+                    <navigationItem key="navigationItem" title="Media" id="nuZ-je-uSy"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dz5-LM-m0z" userLabel="First Responder" sceneMemberID="firstResponder"/>
