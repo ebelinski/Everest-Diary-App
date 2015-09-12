@@ -44,17 +44,21 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r9Z-g3-5Jp">
-                                <rect key="frame" x="0.0" y="162" width="375" height="162"/>
-                            </pickerView>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O0N-u8-kXb">
+                            <pickerView tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O0N-u8-kXb">
                                 <rect key="frame" x="0.0" y="368" width="375" height="162"/>
+                            </pickerView>
+                            <pickerView tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r9Z-g3-5Jp">
+                                <rect key="frame" x="0.0" y="162" width="375" height="162"/>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="zhf-h0-xhV"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="pickerDoctorVisitFrequency" destination="O0N-u8-kXb" id="fSa-Ie-qq2"/>
+                        <outlet property="pickerHealthStatus" destination="r9Z-g3-5Jp" id="HZV-LX-1l5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iqw-h2-2gc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
