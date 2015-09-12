@@ -248,8 +248,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Symptom 1" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="28a-nm-27m">
+                                <rect key="frame" x="16" y="83" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="symptomEditingDidBegin:" destination="LBK-7g-VIu" eventType="editingDidBegin" id="zHR-ra-bdM"/>
+                                    <action selector="symptomEditingDidEnd:" destination="LBK-7g-VIu" eventType="editingDidEnd" id="8rd-9U-vTo"/>
+                                </connections>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lam-Fm-k3o">
-                                <rect key="frame" x="90" y="214" width="195" height="30"/>
+                                <rect key="frame" x="90" y="600" width="195" height="30"/>
                                 <state key="normal" title="Go to symptoms description">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -260,7 +269,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="lam-Fm-k3o" firstAttribute="top" secondItem="7vS-yr-vjm" secondAttribute="bottom" constant="150" id="b6i-2q-sW8"/>
+                            <constraint firstItem="RYe-1u-8RQ" firstAttribute="top" secondItem="lam-Fm-k3o" secondAttribute="bottom" constant="37" id="bdA-wy-chG"/>
                             <constraint firstAttribute="centerX" secondItem="lam-Fm-k3o" secondAttribute="centerX" id="lfJ-XE-V8w"/>
                         </constraints>
                     </view>

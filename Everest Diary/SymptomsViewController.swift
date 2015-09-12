@@ -16,4 +16,11 @@ class SymptomsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func symptomEditingDidBegin(sender: AnyObject) {
+        
+    }
+    
+    @IBAction func symptomEditingDidEnd(sender: AnyObject) {
+        
+    }
 }
