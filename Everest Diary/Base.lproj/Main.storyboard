@@ -335,7 +335,7 @@
         <!--Days-->
         <scene sceneID="eoq-hB-Rv1">
             <objects>
-                <viewController id="jMs-5V-ecB" customClass="DayListViewController" customModule="Everest_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jMs-5V-ecB" customClass="HomeViewController" customModule="Everest_Diary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BZ9-z7-CeJ"/>
                         <viewControllerLayoutGuide type="bottom" id="3VJ-nR-8dL"/>
@@ -367,7 +367,7 @@
                     <navigationItem key="navigationItem" title="Days" id="tdD-lI-UA1"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <segue destination="lsl-xq-vDW" kind="presentation" identifier="dayListToWelcome" id="Jxf-XA-jaN"/>
+                        <segue destination="lsl-xq-vDW" kind="presentation" identifier="homeToWelcome" id="Jxf-XA-jaN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MLi-hP-RPd" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -1,5 +1,5 @@
 //
-//  DayListViewController.swift
+//  HomeViewController.swift
 //  Everest Diary
 //
 //  Created by Eugene Belinski on 12/9/15.
@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class DayListViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -17,6 +17,8 @@ class DayListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.performSegueWithIdentifier("homeToWelcome", sender: self)
     }
 
     // MARK: - Segues
