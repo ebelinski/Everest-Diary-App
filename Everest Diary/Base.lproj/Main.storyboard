@@ -16,22 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Everest Diary" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wV-ik-oAs">
-                                <rect key="frame" x="89" y="156" width="197" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="197" id="LTK-03-UOM"/>
-                                    <constraint firstAttribute="height" constant="21" id="WWn-pL-By0"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Everest Diary" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wV-ik-oAs">
+                                <rect key="frame" x="89" y="50" width="197" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peR-dE-Xje">
-                                <rect key="frame" x="86" y="297" width="203" height="77"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="203" id="JTz-Ll-XJm"/>
-                                    <constraint firstAttribute="height" constant="77" id="mbI-dt-Lqo"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peR-dE-Xje">
+                                <rect key="frame" x="86" y="531" width="203" height="77"/>
                                 <state key="normal" title="Begin">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -39,14 +31,26 @@
                                     <action selector="didPressBegin:" destination="lsl-xq-vDW" eventType="touchUpInside" id="8Jh-fx-Gx5"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How do you feel your health is?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vva-HA-sBr">
+                                <rect key="frame" x="16" y="127" width="242" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How often do you see a doctor?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UbX-HN-rFU">
+                                <rect key="frame" x="16" y="339" width="247" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r9Z-g3-5Jp">
+                                <rect key="frame" x="0.0" y="162" width="375" height="162"/>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O0N-u8-kXb">
+                                <rect key="frame" x="0.0" y="368" width="375" height="162"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="centerX" secondItem="peR-dE-Xje" secondAttribute="centerX" id="0lt-3v-8H7"/>
-                            <constraint firstItem="1wV-ik-oAs" firstAttribute="top" secondItem="921-FN-GwD" secondAttribute="bottom" constant="136" id="IzB-e6-Grn"/>
-                            <constraint firstAttribute="centerX" secondItem="1wV-ik-oAs" secondAttribute="centerX" id="Pmo-E0-DEv"/>
-                            <constraint firstItem="peR-dE-Xje" firstAttribute="top" secondItem="1wV-ik-oAs" secondAttribute="bottom" constant="120" id="byg-ve-wCP"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zhf-h0-xhV"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>

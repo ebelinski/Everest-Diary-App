@@ -14,8 +14,12 @@ class BodyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        imageBody.bodyVC = self
     }
 
+    func createPainPoint(percentX: Float, percentY: Float) {
+        println("new pain point...")
+    }
+    
 }
