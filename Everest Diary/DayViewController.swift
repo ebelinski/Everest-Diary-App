@@ -10,9 +10,17 @@ import UIKit
 
 class DayViewController: UIViewController {
 
-    @IBOutlet weak var detailDescriptionLabel: UILabel!
-
-
+    @IBOutlet var labelFeelingQuestion: UILabel!
+    
+    @IBOutlet var buttonFeelingGood: UIButton!
+    @IBOutlet var buttonFeelingOkay: UIButton!
+    @IBOutlet var buttonFeelingBad: UIButton!
+    
+    @IBOutlet var labelPainQuestion: UILabel!
+    
+    @IBOutlet var buttonPainYes: UIButton!
+    @IBOutlet var buttonPainNo: UIButton!
+    
     var detailItem: AnyObject? {
         didSet {
             // Update the view.
@@ -20,20 +28,27 @@ class DayViewController: UIViewController {
         }
     }
 
-    func configureView() {
-        // Update the user interface for the detail item.
-        if let detail: AnyObject = self.detailItem {
-            if let label = self.detailDescriptionLabel {
-                label.text = detail.valueForKey("timeStamp")!.description
-            }
-        }
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         self.configureView()
+        
+        labelPainQuestion.hidden = true
+        buttonPainYes.hidden = true
+        buttonPainNo.hidden = true
     }
+    
+    func configureView() {
+        if let detail: AnyObject = self.detailItem {
+        }
+    }
+    
+    @IBAction func didPressFeelingButton(sender: AnyObject) {
+        
+        labelPainQuestion.hidden = false
+        buttonPainYes.hidden = false
+        buttonPainNo.hidden = false
+    }
+    
 
 }
 
