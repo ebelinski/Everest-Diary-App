@@ -11,6 +11,7 @@ import UIKit
 class SymptomsViewController: UIViewController {
 
     @IBOutlet var textFieldSymptom1: UITextField!
+    var symptomsPicker: UITableView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,17 +29,37 @@ class SymptomsViewController: UIViewController {
             selector: Selector("keyboardWillBeHidden:"),
             name: UIKeyboardWillHideNotification,
             object: nil)
+        
+        let symptomsPickerVC = SymptomsTableViewController()
+        symptomsPicker = symptomsPickerVC.tableView
+        symptomsPicker?.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 44*3)
+        symptomsPicker?.hidden = true
+        symptomsPicker?.alpha = 0
+        self.view.addSubview(symptomsPicker!)
     }
     
     func keyboardWasShown(aNotification: NSNotification) {
         let info : NSDictionary = aNotification.userInfo!
         let kbSize = info.objectForKey(UIKeyboardFrameBeginUserInfoKey)?
             .CGRectValue().size
-        let height = kbSize!.height
+        let keyboardHeight = kbSize!.height
+        symptomsPicker?.frame = CGRect(
+            x: 0,
+            y: self.view.frame.height - keyboardHeight - 44*3,
+            width: self.view.frame.width,
+            height: 44*3)
+        
+        if let symptomsPicker = symptomsPicker {
+            symptomsPicker.hidden = false
+            UIView.animateWithDuration(1, animations: {
+                symptomsPicker.alpha = 1
+            })
+        }
     }
     
     func keyboardWillBeHidden(aNotification: NSNotification) {
-        
+        symptomsPicker?.hidden = true
+        symptomsPicker?.alpha = 0
     }
     
     func resignAll() {
