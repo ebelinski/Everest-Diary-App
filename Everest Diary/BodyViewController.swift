@@ -10,6 +10,8 @@ import UIKit
 
 class BodyViewController: UIViewController {
 
+    @IBOutlet var imageBody: BodyImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

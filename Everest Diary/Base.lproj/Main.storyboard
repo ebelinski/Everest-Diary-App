@@ -197,16 +197,16 @@
                                     <segue destination="LBK-7g-VIu" kind="show" id="3nQ-KQ-NdG"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yLd-Ab-azr">
-                                <rect key="frame" x="16" y="80" width="343" height="490"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QkZ-Yj-oDl">
                                 <rect key="frame" x="303" y="80" width="47" height="30"/>
                                 <state key="normal" title="Switch">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yLd-Ab-azr" customClass="BodyImageView" customModule="Everest_Diary" customModuleProvider="target">
+                                <rect key="frame" x="16" y="80" width="343" height="490"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -222,6 +222,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Where is your pain?" id="ghO-Qp-ID1"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="imageBody" destination="yLd-Ab-azr" id="Edq-tA-o5e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3dz-Ui-I5s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -357,11 +360,23 @@
                                     <segue destination="Ah7-4n-0Wa" kind="show" id="UXU-4h-VKP"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYu-ch-y4P">
+                                <rect key="frame" x="86" y="290" width="203" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="203" id="6qu-RX-IG8"/>
+                                    <constraint firstAttribute="height" constant="77" id="mkc-dY-Fs8"/>
+                                </constraints>
+                                <state key="normal" title="All Logs">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="wYu-ch-y4P" secondAttribute="centerX" id="0cW-K1-dGy"/>
                             <constraint firstItem="JFr-pC-b3f" firstAttribute="top" secondItem="BZ9-z7-CeJ" secondAttribute="bottom" constant="65" id="cuq-na-rWF"/>
                             <constraint firstAttribute="centerX" secondItem="JFr-pC-b3f" secondAttribute="centerX" id="dxd-jm-352"/>
+                            <constraint firstItem="wYu-ch-y4P" firstAttribute="top" secondItem="JFr-pC-b3f" secondAttribute="bottom" constant="84" id="tyf-nn-wjp"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Days" id="tdD-lI-UA1"/>
