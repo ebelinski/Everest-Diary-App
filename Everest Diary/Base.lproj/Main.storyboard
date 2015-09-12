@@ -1,9 +1,59 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rS3-R9-Ivy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rS3-R9-Ivy">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="sKn-4k-Q3w">
+            <objects>
+                <viewController id="lsl-xq-vDW" customClass="WelcomeViewController" customModule="Everest_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="921-FN-GwD"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hmc-VA-XTn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AjK-nT-dfR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Everest Diary" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wV-ik-oAs">
+                                <rect key="frame" x="202" y="200" width="197" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="197" id="LTK-03-UOM"/>
+                                    <constraint firstAttribute="height" constant="21" id="WWn-pL-By0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peR-dE-Xje">
+                                <rect key="frame" x="199" y="341" width="203" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="203" id="JTz-Ll-XJm"/>
+                                    <constraint firstAttribute="height" constant="77" id="mbI-dt-Lqo"/>
+                                </constraints>
+                                <state key="normal" title="Begin">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressBegin:" destination="lsl-xq-vDW" eventType="touchUpInside" id="8Jh-fx-Gx5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="peR-dE-Xje" secondAttribute="centerX" id="0lt-3v-8H7"/>
+                            <constraint firstItem="1wV-ik-oAs" firstAttribute="top" secondItem="921-FN-GwD" secondAttribute="bottom" constant="136" id="IzB-e6-Grn"/>
+                            <constraint firstAttribute="centerX" secondItem="1wV-ik-oAs" secondAttribute="centerX" id="Pmo-E0-DEv"/>
+                            <constraint firstItem="peR-dE-Xje" firstAttribute="top" secondItem="1wV-ik-oAs" secondAttribute="bottom" constant="120" id="byg-ve-wCP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zhf-h0-xhV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iqw-h2-2gc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="605" y="-674"/>
+        </scene>
         <!--Master-->
         <scene sceneID="cUi-kZ-frf">
             <objects>
@@ -12,17 +62,17 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="pGg-6v-bdr" kind="relationship" relationship="rootViewController" id="RxB-wf-QIq"/>
+                        <segue destination="pGg-6v-bdr" kind="relationship" relationship="rootViewController" id="UeC-Ko-dIi"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eq9-QA-ai8" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-148" y="64"/>
+            <point key="canvasLocation" x="-118" y="64"/>
         </scene>
         <!--Master-->
         <scene sceneID="VgW-fR-Quf">
             <objects>
-                <tableViewController title="Master" id="pGg-6v-bdr" customClass="MasterViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Master" id="pGg-6v-bdr" customClass="DayListViewController" customModule="Everest_Diary" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="mLL-gJ-YKr">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,14 +89,14 @@
                                             <rect key="frame" x="15" y="0.0" width="270" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <segue destination="Ah7-4n-0Wa" kind="show" identifier="showDetail" id="jUr-3t-vfg"/>
+                                    <segue destination="Ah7-4n-0Wa" kind="show" identifier="dayListToDay" id="jUr-3t-vfg"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -56,7 +106,10 @@
                             <outlet property="delegate" destination="pGg-6v-bdr" id="Y6K-Cp-Qkv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Master" id="tQt-TN-PWz"/>
+                    <navigationItem key="navigationItem" title="Days" id="tQt-TN-PWz"/>
+                    <connections>
+                        <segue destination="lsl-xq-vDW" kind="presentation" identifier="dayListToWelcome" animates="NO" id="rEy-YN-OUn"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Cn-md-YlS" sceneMemberID="firstResponder"/>
             </objects>
@@ -65,7 +118,7 @@
         <!--Detail-->
         <scene sceneID="Cn3-H9-jdl">
             <objects>
-                <viewController title="Detail" id="Ah7-4n-0Wa" customClass="DetailViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Detail" id="Ah7-4n-0Wa" customClass="DayViewController" customModule="Everest_Diary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cIm-e0-J51"/>
                         <viewControllerLayoutGuide type="bottom" id="a0L-h9-sNL"/>
@@ -74,29 +127,211 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Detail view content goes here" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Lei-5M-9Gs">
-                                <rect key="frame" x="20" y="292" width="560" height="17"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do you feel?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4CX-Sq-3nE">
+                                <rect key="frame" x="233.5" y="130" width="134.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you have any pain?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axI-hL-GYG">
+                                <rect key="frame" x="213" y="327" width="175" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qW-W2-gIw">
+                                <rect key="frame" x="177" y="206" width="39" height="30"/>
+                                <state key="normal" title="Good">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BuL-qO-Nxj">
+                                <rect key="frame" x="277" y="206" width="36" height="30"/>
+                                <state key="normal" title="Okay">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOI-Gs-m6V">
+                                <rect key="frame" x="329" y="415" width="30" height="30"/>
+                                <state key="normal" title="No">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOp-in-gji">
+                                <rect key="frame" x="377" y="206" width="30" height="30"/>
+                                <state key="normal" title="Bad">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSd-jP-01o">
+                                <rect key="frame" x="228" y="414" width="30" height="30"/>
+                                <state key="normal" title="Yes">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="sTu-Vz-i3u" kind="show" identifier="dayToBody" id="xke-H5-waX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Lei-5M-9Gs" firstAttribute="leading" secondItem="MMQ-IT-qOo" secondAttribute="leading" constant="20" symbolic="YES" id="62x-JV-TTJ"/>
-                            <constraint firstItem="Lei-5M-9Gs" firstAttribute="centerY" secondItem="MMQ-IT-qOo" secondAttribute="centerY" id="JzS-HC-Rnl"/>
-                            <constraint firstAttribute="trailing" secondItem="Lei-5M-9Gs" secondAttribute="trailing" constant="20" symbolic="YES" id="pXB-RP-Zz6"/>
+                            <constraint firstItem="UOI-Gs-m6V" firstAttribute="leading" secondItem="vSd-jP-01o" secondAttribute="trailing" constant="71" id="60P-Yt-lMA"/>
+                            <constraint firstItem="BuL-qO-Nxj" firstAttribute="leading" secondItem="9qW-W2-gIw" secondAttribute="trailing" constant="61" id="7Cv-XC-dw3"/>
+                            <constraint firstItem="OOp-in-gji" firstAttribute="leading" secondItem="BuL-qO-Nxj" secondAttribute="trailing" constant="64" id="9Uf-UG-dhq"/>
+                            <constraint firstItem="4CX-Sq-3nE" firstAttribute="top" secondItem="cIm-e0-J51" secondAttribute="bottom" constant="66" id="Gxp-bo-6wg"/>
+                            <constraint firstItem="axI-hL-GYG" firstAttribute="top" secondItem="OOp-in-gji" secondAttribute="bottom" constant="91" id="Vha-DY-xys"/>
+                            <constraint firstAttribute="centerX" secondItem="4CX-Sq-3nE" secondAttribute="centerX" id="X3m-O1-oSl"/>
+                            <constraint firstItem="UOI-Gs-m6V" firstAttribute="top" secondItem="axI-hL-GYG" secondAttribute="bottom" constant="67" id="YMZ-TC-2XN"/>
+                            <constraint firstAttribute="centerX" secondItem="axI-hL-GYG" secondAttribute="centerX" id="aYS-8D-yKB"/>
+                            <constraint firstItem="OOp-in-gji" firstAttribute="top" secondItem="cIm-e0-J51" secondAttribute="bottom" constant="142" id="c3c-si-d9f"/>
+                            <constraint firstItem="BuL-qO-Nxj" firstAttribute="top" secondItem="4CX-Sq-3nE" secondAttribute="bottom" constant="55" id="cpc-og-dZd"/>
+                            <constraint firstAttribute="centerX" secondItem="BuL-qO-Nxj" secondAttribute="centerX" id="d8Z-QR-pKv"/>
+                            <constraint firstItem="9qW-W2-gIw" firstAttribute="top" secondItem="cIm-e0-J51" secondAttribute="bottom" constant="142" id="mhw-sp-Z2h"/>
+                            <constraint firstAttribute="centerX" secondItem="vSd-jP-01o" secondAttribute="centerX" constant="57" id="qcp-7I-n7J"/>
+                            <constraint firstItem="vSd-jP-01o" firstAttribute="top" secondItem="axI-hL-GYG" secondAttribute="bottom" constant="67" id="xmT-R6-QsR"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Detail" id="cra-N8-TIN"/>
-                    <connections>
-                        <outlet property="detailDescriptionLabel" destination="Lei-5M-9Gs" id="sCT-F7-F6f"/>
-                    </connections>
+                    <navigationItem key="navigationItem" title="Day" id="cra-N8-TIN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lrm-kH-fPn" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1343" y="64"/>
+        </scene>
+        <!--Where is your pain?-->
+        <scene sceneID="KpT-bd-QWH">
+            <objects>
+                <viewController id="sTu-Vz-i3u" customClass="BodyViewController" customModule="Everest_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EpJ-O5-CGE"/>
+                        <viewControllerLayoutGuide type="bottom" id="abR-Tk-R8z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZMM-Jx-fMU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Erv-dW-BmW">
+                                <rect key="frame" x="282.5" y="214" width="36" height="30"/>
+                                <state key="normal" title="Body">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="LBK-7g-VIu" kind="show" id="3nQ-KQ-NdG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Erv-dW-BmW" secondAttribute="centerX" id="F1T-mG-jtP"/>
+                            <constraint firstItem="Erv-dW-BmW" firstAttribute="top" secondItem="EpJ-O5-CGE" secondAttribute="bottom" constant="150" id="fEC-8I-6vL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Where is your pain?" id="ghO-Qp-ID1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3dz-Ui-I5s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2047" y="64"/>
+        </scene>
+        <!--What are your symptoms?-->
+        <scene sceneID="rSX-2K-U1Q">
+            <objects>
+                <viewController id="LBK-7g-VIu" customClass="SymptomsViewController" customModule="Everest_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7vS-yr-vjm"/>
+                        <viewControllerLayoutGuide type="bottom" id="RYe-1u-8RQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L5z-4A-sT8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lam-Fm-k3o">
+                                <rect key="frame" x="203" y="214" width="195" height="30"/>
+                                <state key="normal" title="Go to symptoms description">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="In4-w2-j8L" kind="show" id="cjQ-2j-B2S"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lam-Fm-k3o" firstAttribute="top" secondItem="7vS-yr-vjm" secondAttribute="bottom" constant="150" id="b6i-2q-sW8"/>
+                            <constraint firstAttribute="centerX" secondItem="lam-Fm-k3o" secondAttribute="centerX" id="lfJ-XE-V8w"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="What are your symptoms?" id="LcO-FQ-pic"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GQO-wR-54m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2765" y="64"/>
+        </scene>
+        <!--Describe your symptoms-->
+        <scene sceneID="I9H-C1-IoT">
+            <objects>
+                <viewController id="In4-w2-j8L" customClass="SymptomsDescribeViewController" customModule="Everest_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XN5-0q-sHR"/>
+                        <viewControllerLayoutGuide type="bottom" id="G8Z-Ui-Kcm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OxU-WD-vw8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O5i-eS-dcd">
+                                <rect key="frame" x="262.5" y="214" width="75" height="30"/>
+                                <state key="normal" title="Add Media">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YsW-VX-oMf" kind="show" id="spJ-ZV-HnS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="O5i-eS-dcd" firstAttribute="top" secondItem="XN5-0q-sHR" secondAttribute="bottom" constant="150" id="GSI-S0-xJC"/>
+                            <constraint firstAttribute="centerX" secondItem="O5i-eS-dcd" secondAttribute="centerX" id="UZn-W6-hx1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Describe your symptoms" id="tej-oy-GTA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RUy-fU-uYt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3463" y="64"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="hy8-hn-r6Y">
+            <objects>
+                <viewController id="YsW-VX-oMf" customClass="SymptomsMediaViewController" customModule="Everest_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PmM-RP-tU7"/>
+                        <viewControllerLayoutGuide type="bottom" id="ptR-We-GZ3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5or-mA-ggl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEL-3L-d0K">
+                                <rect key="frame" x="282" y="214" width="37" height="30"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressDoneButton:" destination="YsW-VX-oMf" eventType="touchUpInside" id="5u5-el-UfS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="mEL-3L-d0K" secondAttribute="centerX" id="9nr-ic-xUg"/>
+                            <constraint firstItem="mEL-3L-d0K" firstAttribute="top" secondItem="PmM-RP-tU7" secondAttribute="bottom" constant="150" id="oQC-Fh-SV7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="nuZ-je-uSy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dz5-LM-m0z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4176" y="64"/>
         </scene>
     </scenes>
 </document>

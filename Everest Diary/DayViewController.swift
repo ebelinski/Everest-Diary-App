@@ -1,5 +1,5 @@
 //
-//  DetailViewController.swift
+//  DayViewController.swift
 //  Everest Diary
 //
 //  Created by HHWS on 12/9/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DayViewController: UIViewController {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
 

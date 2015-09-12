@@ -1,5 +1,5 @@
 //
-//  MasterViewController.swift
+//  DayListViewController.swift
 //  Everest Diary
 //
 //  Created by HHWS on 12/9/15.
@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class MasterViewController: UITableViewController, NSFetchedResultsControllerDelegate {
+class DayListViewController: UITableViewController, NSFetchedResultsControllerDelegate {
 
     var managedObjectContext: NSManagedObjectContext? = nil
 
@@ -25,6 +25,8 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
 
         let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
         self.navigationItem.rightBarButtonItem = addButton
+        
+        self.performSegueWithIdentifier("dayListToWelcome", sender: self)
     }
 
     override func didReceiveMemoryWarning() {
@@ -57,7 +59,7 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow() {
             let object = self.fetchedResultsController.objectAtIndexPath(indexPath) as! NSManagedObject
-            (segue.destinationViewController as! DetailViewController).detailItem = object
+            (segue.destinationViewController as! DayViewController).detailItem = object
             }
         }
     }

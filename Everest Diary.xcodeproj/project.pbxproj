@@ -9,12 +9,17 @@
 /* Begin PBXBuildFile section */
 		B6313D691BA4804D009DA8E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6313D681BA4804D009DA8E8 /* AppDelegate.swift */; };
 		B6313D6C1BA4804D009DA8E8 /* Everest_Diary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6313D6A1BA4804D009DA8E8 /* Everest_Diary.xcdatamodeld */; };
-		B6313D6E1BA4804D009DA8E8 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6313D6D1BA4804D009DA8E8 /* MasterViewController.swift */; };
-		B6313D701BA4804D009DA8E8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6313D6F1BA4804D009DA8E8 /* DetailViewController.swift */; };
+		B6313D6E1BA4804D009DA8E8 /* DayListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6313D6D1BA4804D009DA8E8 /* DayListViewController.swift */; };
+		B6313D701BA4804D009DA8E8 /* DayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6313D6F1BA4804D009DA8E8 /* DayViewController.swift */; };
 		B6313D731BA4804D009DA8E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6313D711BA4804D009DA8E8 /* Main.storyboard */; };
 		B6313D751BA4804D009DA8E8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6313D741BA4804D009DA8E8 /* Images.xcassets */; };
 		B6313D781BA4804D009DA8E8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6313D761BA4804D009DA8E8 /* LaunchScreen.xib */; };
 		B6313D841BA4804D009DA8E8 /* Everest_DiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6313D831BA4804D009DA8E8 /* Everest_DiaryTests.swift */; };
+		B6313D8E1BA481B4009DA8E8 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6313D8D1BA481B4009DA8E8 /* WelcomeViewController.swift */; };
+		B6313D911BA48458009DA8E8 /* BodyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6313D901BA48458009DA8E8 /* BodyViewController.swift */; };
+		B6313D931BA4851A009DA8E8 /* SymptomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6313D921BA4851A009DA8E8 /* SymptomsViewController.swift */; };
+		B6313D971BA48551009DA8E8 /* SymptomsDescribeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6313D961BA48551009DA8E8 /* SymptomsDescribeViewController.swift */; };
+		B6313D991BA48564009DA8E8 /* SymptomsMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6313D981BA48564009DA8E8 /* SymptomsMediaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +37,19 @@
 		B6313D671BA4804D009DA8E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6313D681BA4804D009DA8E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6313D6B1BA4804D009DA8E8 /* Everest_Diary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Everest_Diary.xcdatamodel; sourceTree = "<group>"; };
-		B6313D6D1BA4804D009DA8E8 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		B6313D6F1BA4804D009DA8E8 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B6313D6D1BA4804D009DA8E8 /* DayListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayListViewController.swift; sourceTree = "<group>"; };
+		B6313D6F1BA4804D009DA8E8 /* DayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewController.swift; sourceTree = "<group>"; };
 		B6313D721BA4804D009DA8E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B6313D741BA4804D009DA8E8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B6313D771BA4804D009DA8E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B6313D7D1BA4804D009DA8E8 /* Everest DiaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Everest DiaryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6313D821BA4804D009DA8E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6313D831BA4804D009DA8E8 /* Everest_DiaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Everest_DiaryTests.swift; sourceTree = "<group>"; };
+		B6313D8D1BA481B4009DA8E8 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		B6313D901BA48458009DA8E8 /* BodyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyViewController.swift; sourceTree = "<group>"; };
+		B6313D921BA4851A009DA8E8 /* SymptomsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomsViewController.swift; sourceTree = "<group>"; };
+		B6313D961BA48551009DA8E8 /* SymptomsDescribeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomsDescribeViewController.swift; sourceTree = "<group>"; };
+		B6313D981BA48564009DA8E8 /* SymptomsMediaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomsMediaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				B6313D681BA4804D009DA8E8 /* AppDelegate.swift */,
-				B6313D6D1BA4804D009DA8E8 /* MasterViewController.swift */,
-				B6313D6F1BA4804D009DA8E8 /* DetailViewController.swift */,
+				B6313D8F1BA481C1009DA8E8 /* Controllers */,
 				B6313D711BA4804D009DA8E8 /* Main.storyboard */,
 				B6313D741BA4804D009DA8E8 /* Images.xcassets */,
 				B6313D761BA4804D009DA8E8 /* LaunchScreen.xib */,
@@ -116,6 +125,20 @@
 				B6313D821BA4804D009DA8E8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6313D8F1BA481C1009DA8E8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B6313D8D1BA481B4009DA8E8 /* WelcomeViewController.swift */,
+				B6313D6D1BA4804D009DA8E8 /* DayListViewController.swift */,
+				B6313D6F1BA4804D009DA8E8 /* DayViewController.swift */,
+				B6313D901BA48458009DA8E8 /* BodyViewController.swift */,
+				B6313D921BA4851A009DA8E8 /* SymptomsViewController.swift */,
+				B6313D961BA48551009DA8E8 /* SymptomsDescribeViewController.swift */,
+				B6313D981BA48564009DA8E8 /* SymptomsMediaViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +242,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6313D6C1BA4804D009DA8E8 /* Everest_Diary.xcdatamodeld in Sources */,
+				B6313D8E1BA481B4009DA8E8 /* WelcomeViewController.swift in Sources */,
+				B6313D911BA48458009DA8E8 /* BodyViewController.swift in Sources */,
+				B6313D991BA48564009DA8E8 /* SymptomsMediaViewController.swift in Sources */,
+				B6313D971BA48551009DA8E8 /* SymptomsDescribeViewController.swift in Sources */,
 				B6313D691BA4804D009DA8E8 /* AppDelegate.swift in Sources */,
-				B6313D6E1BA4804D009DA8E8 /* MasterViewController.swift in Sources */,
-				B6313D701BA4804D009DA8E8 /* DetailViewController.swift in Sources */,
+				B6313D931BA4851A009DA8E8 /* SymptomsViewController.swift in Sources */,
+				B6313D6E1BA4804D009DA8E8 /* DayListViewController.swift in Sources */,
+				B6313D701BA4804D009DA8E8 /* DayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
