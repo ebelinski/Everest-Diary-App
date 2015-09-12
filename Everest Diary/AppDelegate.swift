@@ -7,18 +7,18 @@
 //
 
 import UIKit
-import CoreData
+import Parse
+import Bolts
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
-        let navigationController = self.window!.rootViewController as! UINavigationController
-        let controller = navigationController.topViewController as! DayListViewController
+        Parse.setApplicationId("CVQ42PaStVGW9M12NMARiu55LskXSC9tvEvymHaP",
+            clientKey: "58IiCEDYPLzt1TbLylXCPfCcH6jdxWGjRsQWQxVl")
+        
         return true
     }
 
