@@ -20,17 +20,9 @@ class DayViewController: UIViewController {
     
     @IBOutlet var buttonPainYes: UIButton!
     @IBOutlet var buttonPainNo: UIButton!
-    
-    var detailItem: AnyObject? {
-        didSet {
-            // Update the view.
-            self.configureView()
-        }
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.configureView()
         
         labelPainQuestion.hidden = true
         buttonPainYes.hidden = true
@@ -38,11 +30,6 @@ class DayViewController: UIViewController {
         labelPainQuestion.alpha = 0
         buttonPainYes.alpha = 0
         buttonPainNo.alpha = 0
-    }
-    
-    func configureView() {
-        if let detail: AnyObject = self.detailItem {
-        }
     }
     
     @IBAction func didPressFeelingButton(sender: AnyObject) {
