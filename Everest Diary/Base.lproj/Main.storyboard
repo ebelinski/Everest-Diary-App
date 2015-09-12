@@ -258,8 +258,8 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lam-Fm-k3o">
-                                <rect key="frame" x="90" y="600" width="195" height="30"/>
-                                <state key="normal" title="Go to symptoms description">
+                                <rect key="frame" x="156" y="600" width="62" height="30"/>
+                                <state key="normal" title="Continue">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -275,6 +275,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="What are your symptoms?" id="LcO-FQ-pic"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="textFieldSymptom1" destination="28a-nm-27m" id="MMg-jA-wI1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GQO-wR-54m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
