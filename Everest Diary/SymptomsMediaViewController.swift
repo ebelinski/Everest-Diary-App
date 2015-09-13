@@ -27,7 +27,21 @@ class SymptomsMediaViewController: UIViewController {
     }
     
     @IBAction func didPressMediaButton(sender: AnyObject) {
-        
+        let menu = UIAlertController(title: "Add Media", message: nil, preferredStyle: .ActionSheet)
+        menu.addAction(UIAlertAction(title: "Take a picture", style: UIAlertActionStyle.Default, handler: {
+            (action:UIAlertAction!) -> Void in
+            println("clicked")
+        }))
+        menu.addAction(UIAlertAction(title: "Choose existing picture", style: UIAlertActionStyle.Default, handler: {
+            (action:UIAlertAction!) -> Void in
+            println("clicked")
+        }))
+        menu.addAction(UIAlertAction(title: "Create a recording", style: UIAlertActionStyle.Default, handler: {
+            (action:UIAlertAction!) -> Void in
+            println("clicked")
+        }))
+        menu.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: nil))
+        self.presentViewController(menu, animated: true, completion: nil)
     }
     
     @IBAction func didPressDoneButton(sender: AnyObject) {
