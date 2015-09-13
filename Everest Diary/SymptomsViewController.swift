@@ -304,16 +304,6 @@ class SymptomsViewController: UIViewController, UITableViewDataSource, UITableVi
             object: nil)
         
         filteredSymptoms = symptoms
-        
-        symptomsPicker = UITableView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 44*5
-            ))
-        symptomsPicker?.registerClass(UITableViewCell.classForCoder(), forCellReuseIdentifier: "normalcell")
-        symptomsPicker?.delegate = self
-        symptomsPicker?.allowsSelection = true
-        symptomsPicker?.dataSource = self
-        symptomsPicker?.hidden = true
-        symptomsPicker?.alpha = 0
-        self.view.addSubview(symptomsPicker!)
     }
     
     func keyboardWasShown(aNotification: NSNotification) {
@@ -321,11 +311,23 @@ class SymptomsViewController: UIViewController, UITableViewDataSource, UITableVi
         let kbSize = info.objectForKey(UIKeyboardFrameBeginUserInfoKey)?
             .CGRectValue().size
         let keyboardHeight = kbSize!.height
-        symptomsPicker?.frame = CGRect(
-            x: 0,
-            y: self.view.frame.height - keyboardHeight - 44*5,
-            width: self.view.frame.width,
-            height: 44*5)
+        
+        if let symptomsPicker = symptomsPicker {
+            
+        } else {
+            symptomsPicker = UITableView(frame: CGRect(
+                x: 0,
+                y: self.view.frame.height - keyboardHeight - 44*5,
+                width: self.view.frame.width,
+                height: 44*5))
+            symptomsPicker?.registerClass(UITableViewCell.classForCoder(), forCellReuseIdentifier: "normalcell")
+            symptomsPicker?.delegate = self
+            symptomsPicker?.allowsSelection = true
+            symptomsPicker?.dataSource = self
+            symptomsPicker?.hidden = true
+            symptomsPicker?.alpha = 0
+            self.view.addSubview(symptomsPicker!)
+        }
         
         if let symptomsPicker = symptomsPicker {
             symptomsPicker.reloadData()
@@ -337,8 +339,12 @@ class SymptomsViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func keyboardWillBeHidden(aNotification: NSNotification) {
-        symptomsPicker?.hidden = true
-        symptomsPicker?.alpha = 0
+        UIView.animateWithDuration(0.5, animations: {
+            self.symptomsPicker?.alpha = 0
+        }, completion: {
+            (Bool) in
+            self.symptomsPicker?.hidden = true
+        })
     }
     
     func resignAll() {
