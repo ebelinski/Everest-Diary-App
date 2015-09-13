@@ -609,6 +609,8 @@
                     <navigationItem key="navigationItem" title="Home" id="tdD-lI-UA1"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="logHistoryButton" destination="wYu-ch-y4P" id="c4l-ge-wUA"/>
+                        <outlet property="logoImage" destination="1Lf-gv-u5S" id="4ad-Xy-FoF"/>
                         <segue destination="lsl-xq-vDW" kind="presentation" identifier="homeToWelcome" animates="NO" id="Jxf-XA-jaN"/>
                     </connections>
                 </viewController>

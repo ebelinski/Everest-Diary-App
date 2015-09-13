@@ -109,6 +109,7 @@ class SymptomsMediaViewController: UIViewController, UINavigationControllerDeleg
     }
     
     @IBAction func didPressDoneButton(sender: AnyObject) {
+        NSUserDefaults.standardUserDefaults().setBool(true, forKey: "didJustUnwind")
         self.navigationController?.popToRootViewControllerAnimated(true)
     }
 
