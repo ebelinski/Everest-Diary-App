@@ -350,11 +350,15 @@ class SymptomsViewController: UIViewController, UITableViewDataSource, UITableVi
     @IBAction func symptomEditingChanged(sender: AnyObject) {
         let search = (sender as! UITextField).text.lowercaseString
         
-        filteredSymptoms = [String]()
-        
-        for symptom in symptoms {
-            if symptom.lowercaseString.rangeOfString(search) != nil {
-                filteredSymptoms.append(symptom)
+        if search.isEmpty {
+            filteredSymptoms = symptoms
+        } else {
+            filteredSymptoms = [String]()
+            
+            for symptom in symptoms {
+                if symptom.lowercaseString.rangeOfString(search) != nil {
+                    filteredSymptoms.append(symptom)
+                }
             }
         }
         
