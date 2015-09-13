@@ -376,7 +376,7 @@
             </objects>
             <point key="canvasLocation" x="2783.5" y="20.5"/>
         </scene>
-        <!--Days-->
+        <!--Home-->
         <scene sceneID="eoq-hB-Rv1">
             <objects>
                 <viewController id="jMs-5V-ecB" customClass="HomeViewController" customModule="Everest_Diary" customModuleProvider="target" sceneMemberID="viewController">
@@ -388,39 +388,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFr-pC-b3f">
-                                <rect key="frame" x="86" y="129" width="203" height="77"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EverestLogoBlue6big" translatesAutoresizingMaskIntoConstraints="NO" id="1Lf-gv-u5S">
+                                <rect key="frame" x="45" y="94" width="285" height="203"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="77" id="5cg-eq-AN7"/>
-                                    <constraint firstAttribute="width" constant="203" id="J6O-Z2-KuO"/>
+                                    <constraint firstAttribute="height" constant="203" id="LU7-IK-Vpe"/>
+                                    <constraint firstAttribute="width" constant="285" id="UbY-82-hOw"/>
                                 </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFr-pC-b3f">
+                                <rect key="frame" x="86" y="361" width="203" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <state key="normal" title="Log Today">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="Ah7-4n-0Wa" kind="show" id="UXU-4h-VKP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYu-ch-y4P">
-                                <rect key="frame" x="86" y="290" width="203" height="77"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="203" id="6qu-RX-IG8"/>
-                                    <constraint firstAttribute="height" constant="77" id="mkc-dY-Fs8"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYu-ch-y4P">
+                                <rect key="frame" x="86" y="473" width="203" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <state key="normal" title="All Logs">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.28627450980392155" green="0.40784313725490196" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="wYu-ch-y4P" secondAttribute="centerX" id="0cW-K1-dGy"/>
-                            <constraint firstItem="JFr-pC-b3f" firstAttribute="top" secondItem="BZ9-z7-CeJ" secondAttribute="bottom" constant="65" id="cuq-na-rWF"/>
-                            <constraint firstAttribute="centerX" secondItem="JFr-pC-b3f" secondAttribute="centerX" id="dxd-jm-352"/>
-                            <constraint firstItem="wYu-ch-y4P" firstAttribute="top" secondItem="JFr-pC-b3f" secondAttribute="bottom" constant="84" id="tyf-nn-wjp"/>
+                            <constraint firstAttribute="centerX" secondItem="1Lf-gv-u5S" secondAttribute="centerX" id="7Rz-En-Zdo"/>
+                            <constraint firstItem="1Lf-gv-u5S" firstAttribute="top" secondItem="BZ9-z7-CeJ" secondAttribute="bottom" constant="30" id="iHj-QR-fIh"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Days" id="tdD-lI-UA1"/>
+                    <navigationItem key="navigationItem" title="Home" id="tdD-lI-UA1"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <segue destination="lsl-xq-vDW" kind="presentation" identifier="homeToWelcome" animates="NO" id="Jxf-XA-jaN"/>
@@ -432,6 +433,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="EverestLogoBlue6big" width="2100" height="1500"/>
         <image name="ManFrontWhite" width="577" height="1158"/>
     </resources>
 </document>

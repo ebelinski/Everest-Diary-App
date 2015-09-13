@@ -18,6 +18,8 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.backgroundColor = UIColor(red: 0.361, green: 0.49, blue: 0.612, alpha: 1) /* #5c7d9c */
+        
         self.performSegueWithIdentifier("homeToWelcome", sender: self)
     }
 
