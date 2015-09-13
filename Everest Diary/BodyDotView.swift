@@ -10,6 +10,8 @@ import UIKit
 
 class BodyDotView: UIView {
     
+    let color: CGColor = UIColor(red: 1, green: 0.204, blue: 0.204, alpha: 1).CGColor /* #ff3434 */
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -29,10 +31,10 @@ class BodyDotView: UIView {
         var endAngle: Float = 0.0
         let radius = (CGFloat(self.frame.size.width) - CGFloat(1.5)) / 2
         
-        var fillColor = UIColor.blueColor().CGColor
+        var fillColor = color
         var pathDrawType = kCGPathFillStroke
         
-        CGContextSetStrokeColorWithColor(context, UIColor.blueColor().CGColor)
+        CGContextSetStrokeColorWithColor(context, color)
         CGContextSetLineWidth(context, CGFloat(1.5))
         CGContextSetFillColorWithColor(context, fillColor)
         CGContextAddArc(context,
