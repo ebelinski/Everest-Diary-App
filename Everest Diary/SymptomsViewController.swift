@@ -8,13 +8,285 @@
 
 import UIKit
 
-class SymptomsViewController: UIViewController {
+class SymptomsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    var symptoms: [String] = [String]()
 
     @IBOutlet var textFieldSymptom1: UITextField!
     var symptomsPicker: UITableView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // TODO: Make this, like, not hardcoded
+        symptoms = [
+            "Abdominal pain",
+            "Acid feeling",
+            "Acid reflux ",
+            "Ache",
+            "Acne - excessive",
+            "Alcohol withdrawal",
+            "Allergy",
+            "Ankle Pain",
+            "Anxiety",
+            "Appetite - increased",
+            "Appetite - loss",
+            "Arm Pain",
+            "Asthma",
+            "Backache",
+            "Bad breath",
+            "Bad taste in mouth",
+            "Behavior abnormality",
+            "Bladder control issues",
+            "Bladder pain",
+            "Blister",
+            "Bloating",
+            "Blood in semen",
+            "Blood in urine",
+            "Blood in stool",
+            "Blood in sputum (cough mucus) ",
+            "Bloody nose",
+            "Blurry vision",
+            "Breast discharge (not nipple)",
+            "Breast pain",
+            "Bruising",
+            "Bowel control issues",
+            "Bumps on skin",
+            "Bumps - other",
+            "Burning",
+            "Burning urination",
+            "Cant exercise",
+            "Chest pain",
+            "Chills",
+            "Cloudy urine",
+            "Cold",
+            "Cold fingers ",
+            "Cold feet",
+            "Cold hands",
+            "Cold sore",
+            "Confusion",
+            "Congested - throat",
+            "Congested - nose",
+            "Constipation",
+            "Cough",
+            "Cracking joints",
+            "Cramps",
+            "Dark circles under eye",
+            "Dark urine",
+            "Decreased appetite",
+            "Dehydration",
+            "Delusions",
+            "Depression",
+            "Difficulty breathing",
+            "Difficulty concentrating",
+            "Difficulty urinating",
+            "Difficulty speaking",
+            "Difficulty sleeping",
+            "Difficulty waking up",
+            "Difficulty walking",
+            "Discharge - eye",
+            "Discharge - penile",
+            "Discharge - nose",
+            "Discharge - urinary",
+            "Distracted",
+            "Dizzy",
+            "Double vision",
+            "Drooling",
+            "Dry eye",
+            "Dry mouth",
+            "Dry skin",
+            "Earache",
+            "Elbow pain",
+            "Euphoria",
+            "Energy - low levels",
+            "Energy - high levels",
+            "Eye discoloration",
+            "Eye pain",
+            "Eye puffing",
+            "Eye swelling",
+            "Eye twitch",
+            "Fainting",
+            "Farting - excessive",
+            "Fatigue",
+            "Fever",
+            "Flaky scalp",
+            "Flu",
+            "Fluctuations - mood",
+            "Foot pain",
+            "Frequent urination",
+            "Gas",
+            "Gout (uric acid build-up)",
+            "Gum soreness",
+            "Gum pain",
+            "Gum bleeding",
+            "Hair growth ( excessive)",
+            "Hair loss",
+            "Hairy tongue",
+            "Hand pain",
+            "Headache",
+            "Heart rate feels fast",
+            "Heart rate feels slow",
+            "Heart pain",
+            "Hearing loss",
+            "Heartburn",
+            "Heel pain",
+            "Hip pain",
+            "Hoarseness",
+            "Hot body/Hyperthermia",
+            "Hyperactive",
+            "Hyperventilating",
+            "Impotence",
+            "Impulsiveness",
+            "Inattentive",
+            "Increased appetite",
+            "Infertility",
+            "Insomnia",
+            "Inverted nipple",
+            "Irritable Bowel",
+            "Itch",
+            "Jaw pain",
+            "Joint pain",
+            "Joint popping",
+            "Joint stiffness",
+            "Kidney pain",
+            "Kidney stone",
+            "Knee pain",
+            "Lazy eye",
+            "Leg pain",
+            "Leg soreness",
+            "Libido - lower ",
+            "Libido - higher",
+            "Lifting arm difficulty",
+            "Lifting leg difficulty",
+            "Limb pain",
+            "Limping",
+            "Lip pain",
+            "Lip swelling",
+            "Lymph node - swollen",
+            "Medication - missed dose",
+            "Medication - excess",
+            "Memory loss",
+            "Menopausal symptoms",
+            "Menstrual cramps",
+            "Menstruation - excessive bleeding",
+            "Menstruation - late",
+            "Metal taste in mouth",
+            "Migraine (one sided) ",
+            "Missed period",
+            "Mood swings",
+            "Morning sickness",
+            "Muscle cramp",
+            "Muscle pain",
+            "Muscle spasm",
+            "Mute",
+            "Nail clubbing",
+            "Nail discoloration",
+            "Nausea",
+            "Neck pain",
+            "Nipple discharge",
+            "Nipple inversion",
+            "Nipple",
+            "Numbness - fingers",
+            "Numbness - foot",
+            "Numbness - toes",
+            "Numbness - general/ other",
+            "Overactive bladder",
+            "Overactive bowel",
+            "Other",
+            "Overdose - Medication",
+            "Passed out",
+            "Pain after exercise",
+            "Pain during intercourse",
+            "Palpitations",
+            "Panic attack",
+            "Paralysis",
+            "Paranoid",
+            "Peeling skin",
+            "Penis itching",
+            "Penis bumps",
+            "Penis pain",
+            "Pink eye",
+            "Post nasal drip",
+            "Pregnancy",
+            "Pressure",
+            "Racing thoughts",
+            "Rash",
+            "Rash  - with bleeding",
+            "Rectal bleeding",
+            "Red spots - skin",
+            "Red streaks - skin",
+            "Restless legs",
+            "Ringing - ears",
+            "Runny nose",
+            "Seizure",
+            "Shakiness - hands ",
+            "Shakiness - other",
+            "Shortness of breath",
+            "Sinus pain",
+            "Sinus infection",
+            "Sneezing",
+            "Snoring",
+            "Sore body",
+            "Sore throat",
+            "Spasm",
+            "Stiffness",
+            "Stomach cramp",
+            "Stool color change",
+            "Stool texture change",
+            "Stool frequency change",
+            "Sputum - clear",
+            "Sputum - yellow",
+            "Sputum - other ",
+            "Suicidal ideation",
+            "Sunburn",
+            "Sweat - excessive",
+            "Testicle swelling",
+            "Testicle pain",
+            "Thirsty",
+            "Throat pain",
+            "Tickling sensation",
+            "Tingling - hands",
+            "Tingling - feet",
+            "Tingling - other",
+            "Toe pain",
+            "Tongue discoloration",
+            "Tongue pain",
+            "Tongue taste difference",
+            "Tongue - swollen",
+            "Tremors",
+            "Tunnel vision",
+            "Unusual behavior",
+            "Urine - discharge",
+            "Urine - discoloration",
+            "Urine - spasm",
+            "Urine - urgency",
+            "Urine - retention",
+            "Urine - odor",
+            "Vaginal bleeding",
+            "Vaginal bumps",
+            "Vaginal discharge",
+            "Vaginal dryness",
+            "Vaginal discoloration",
+            "Vaginal odor",
+            "Vertigo",
+            "Vision loss",
+            "Vocal outbursts",
+            "Voices in head",
+            "Vomit",
+            "Vomit blood",
+            "Watery eyes",
+            "Weakness",
+            "Weight gain",
+            "Weight loss",
+            "Wheezing",
+            "Wrist pain",
+            "Yawning - excessive",
+            "Yellow skin tint",
+            "Yellow eyes",
+            "Yellow fingers",
+            "Zero energy",
+            "Zombie-like feeling"
+        ]
         
         var tap: UITapGestureRecognizer = UITapGestureRecognizer(
             target: self, action: "resignAll")
@@ -30,9 +302,11 @@ class SymptomsViewController: UIViewController {
             name: UIKeyboardWillHideNotification,
             object: nil)
         
-        let symptomsPickerVC = SymptomsTableViewController()
-        symptomsPicker = symptomsPickerVC.tableView
-        symptomsPicker?.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 44*3)
+//        let symptomsPickerVC = self.storyboard!.instantiateViewControllerWithIdentifier("symptomstableviewcontroller") as! SymptomsTableViewController
+        symptomsPicker = UITableView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 44*3))
+        symptomsPicker?.registerClass(UITableViewCell.classForCoder(), forCellReuseIdentifier: "normalcell")
+        symptomsPicker?.dataSource = self
+        symptomsPicker?.delegate = self
         symptomsPicker?.hidden = true
         symptomsPicker?.alpha = 0
         self.view.addSubview(symptomsPicker!)
@@ -50,6 +324,7 @@ class SymptomsViewController: UIViewController {
             height: 44*3)
         
         if let symptomsPicker = symptomsPicker {
+            symptomsPicker.reloadData()
             symptomsPicker.hidden = false
             UIView.animateWithDuration(1, animations: {
                 symptomsPicker.alpha = 1
@@ -72,5 +347,24 @@ class SymptomsViewController: UIViewController {
     
     @IBAction func symptomEditingDidEnd(sender: AnyObject) {
         
+    }
+    
+    // MARK: - Table view data source
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return symptoms.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("normalcell", forIndexPath: indexPath) as! UITableViewCell
+        
+        println(symptoms[indexPath.row])
+        cell.textLabel!.text = symptoms[indexPath.row]
+        
+        return cell
     }
 }
