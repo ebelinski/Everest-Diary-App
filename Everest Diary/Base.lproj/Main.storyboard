@@ -444,6 +444,9 @@
                         <outlet property="labelSymptom1" destination="FxJ-uI-fax" id="dPg-V8-OTq"/>
                         <outlet property="labelSymptom2" destination="tYe-7I-gQU" id="6pm-fn-7x2"/>
                         <outlet property="labelSymptom3" destination="9yz-OH-k94" id="jsw-Xg-ez2"/>
+                        <outlet property="textAreaSymptoms1" destination="BKS-7p-UDU" id="4km-HQ-BZH"/>
+                        <outlet property="textAreaSymptoms2" destination="Ss6-VN-bfd" id="W7q-J1-3PS"/>
+                        <outlet property="textAreaSymptoms3" destination="ZFj-dw-O6W" id="YXe-jw-39C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RUy-fU-uYt" userLabel="First Responder" sceneMemberID="firstResponder"/>
