@@ -293,10 +293,6 @@ class SymptomsViewController: UIViewController, UITableViewDataSource, UITableVi
             "Zombie-like feeling"
         ]
         
-        var tap: UITapGestureRecognizer = UITapGestureRecognizer(
-            target: self, action: "resignAll")
-//        view.addGestureRecognizer(tap)
-        
         NSNotificationCenter.defaultCenter().addObserver(self,
             selector: Selector("keyboardWasShown:"),
             name: UIKeyboardWillShowNotification,
