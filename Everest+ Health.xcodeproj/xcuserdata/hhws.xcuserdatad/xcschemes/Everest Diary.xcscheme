@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B6313D621BA4804D009DA8E8"
-               BuildableName = "Everest Diary.app"
-               BlueprintName = "Everest Diary"
-               ReferencedContainer = "container:Everest Diary.xcodeproj">
+               BuildableName = "Everest+ Health.app"
+               BlueprintName = "Everest+ Health"
+               ReferencedContainer = "container:Everest+ Health.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B6313D7C1BA4804D009DA8E8"
-               BuildableName = "Everest DiaryTests.xctest"
-               BlueprintName = "Everest DiaryTests"
-               ReferencedContainer = "container:Everest Diary.xcodeproj">
+               BuildableName = "Everest+ HealthTests.xctest"
+               BlueprintName = "Everest+ HealthTests"
+               ReferencedContainer = "container:Everest+ Health.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B6313D7C1BA4804D009DA8E8"
-               BuildableName = "Everest DiaryTests.xctest"
-               BlueprintName = "Everest DiaryTests"
-               ReferencedContainer = "container:Everest Diary.xcodeproj">
+               BuildableName = "Everest+ HealthTests.xctest"
+               BlueprintName = "Everest+ HealthTests"
+               ReferencedContainer = "container:Everest+ Health.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B6313D621BA4804D009DA8E8"
-            BuildableName = "Everest Diary.app"
-            BlueprintName = "Everest Diary"
-            ReferencedContainer = "container:Everest Diary.xcodeproj">
+            BuildableName = "Everest+ Health.app"
+            BlueprintName = "Everest+ Health"
+            ReferencedContainer = "container:Everest+ Health.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B6313D621BA4804D009DA8E8"
-            BuildableName = "Everest Diary.app"
-            BlueprintName = "Everest Diary"
-            ReferencedContainer = "container:Everest Diary.xcodeproj">
+            BuildableName = "Everest+ Health.app"
+            BlueprintName = "Everest+ Health"
+            ReferencedContainer = "container:Everest+ Health.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B6313D621BA4804D009DA8E8"
-            BuildableName = "Everest Diary.app"
-            BlueprintName = "Everest Diary"
-            ReferencedContainer = "container:Everest Diary.xcodeproj">
+            BuildableName = "Everest+ Health.app"
+            BlueprintName = "Everest+ Health"
+            ReferencedContainer = "container:Everest+ Health.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
