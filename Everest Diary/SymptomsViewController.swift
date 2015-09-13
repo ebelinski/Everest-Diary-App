@@ -14,6 +14,9 @@ class SymptomsViewController: UIViewController, UITableViewDataSource, UITableVi
     var filteredSymptoms: [String] = [String]()
 
     @IBOutlet var textFieldSymptom1: UITextField!
+    @IBOutlet var textFieldSymptom2: UITextField!
+    @IBOutlet var textFieldSymptom3: UITextField!
+    
     var activeTextField: UITextField?
     var symptomsPicker: UITableView?
     
@@ -343,6 +346,8 @@ class SymptomsViewController: UIViewController, UITableViewDataSource, UITableVi
     
     func resignAll() {
         self.textFieldSymptom1.resignFirstResponder()
+        self.textFieldSymptom2.resignFirstResponder()
+        self.textFieldSymptom3.resignFirstResponder()
     }
 
     @IBAction func symptomEditingDidBegin(sender: AnyObject) {

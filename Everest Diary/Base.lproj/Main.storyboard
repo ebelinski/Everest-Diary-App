@@ -258,6 +258,16 @@
                                     <action selector="symptomEditingDidEnd:" destination="LBK-7g-VIu" eventType="editingDidEnd" id="8rd-9U-vTo"/>
                                 </connections>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Symptom 2" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RSh-Z3-ac4">
+                                <rect key="frame" x="16" y="121" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="symptomEditingChanged:" destination="LBK-7g-VIu" eventType="editingChanged" id="s0A-zV-LnN"/>
+                                    <action selector="symptomEditingDidBegin:" destination="LBK-7g-VIu" eventType="editingDidBegin" id="t8V-LK-uW7"/>
+                                    <action selector="symptomEditingDidEnd:" destination="LBK-7g-VIu" eventType="editingDidEnd" id="EKF-c6-UpR"/>
+                                </connections>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lam-Fm-k3o">
                                 <rect key="frame" x="156" y="600" width="62" height="30"/>
                                 <state key="normal" title="Continue">
@@ -267,6 +277,16 @@
                                     <segue destination="In4-w2-j8L" kind="show" id="cjQ-2j-B2S"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Symptom 3" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x7E-AD-AQQ">
+                                <rect key="frame" x="16" y="159" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="symptomEditingChanged:" destination="LBK-7g-VIu" eventType="editingChanged" id="qQG-KR-er4"/>
+                                    <action selector="symptomEditingDidBegin:" destination="LBK-7g-VIu" eventType="editingDidBegin" id="kWp-Kc-OYR"/>
+                                    <action selector="symptomEditingDidEnd:" destination="LBK-7g-VIu" eventType="editingDidEnd" id="DBO-KS-MtF"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -278,6 +298,8 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="textFieldSymptom1" destination="28a-nm-27m" id="MMg-jA-wI1"/>
+                        <outlet property="textFieldSymptom2" destination="RSh-Z3-ac4" id="5jR-Te-quK"/>
+                        <outlet property="textFieldSymptom3" destination="x7E-AD-AQQ" id="ebm-Lw-LgU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GQO-wR-54m" userLabel="First Responder" sceneMemberID="firstResponder"/>
