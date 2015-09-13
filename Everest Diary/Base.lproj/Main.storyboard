@@ -425,10 +425,10 @@
             </objects>
             <point key="canvasLocation" x="421.5" y="20.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Medications Taken View Controller-->
         <scene sceneID="Y3c-3S-1jO">
             <objects>
-                <viewController id="UiT-bk-zJd" sceneMemberID="viewController">
+                <viewController id="UiT-bk-zJd" customClass="MedicationsTakenViewController" customModule="Everest_Diary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iRK-ko-rk9"/>
                         <viewControllerLayoutGuide type="bottom" id="XGY-Vk-ufd"/>
@@ -439,32 +439,35 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68S-3V-6aG">
                                 <rect key="frame" x="37" y="173" width="300" height="70"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Yes, all">
+                                    <color key="titleColor" red="0.28627450980000002" green="0.40784313729999999" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Ah7-4n-0Wa" kind="show" id="1q0-7u-EOR"/>
+                                    <action selector="didPressYesAll:" destination="UiT-bk-zJd" eventType="touchUpInside" id="qH0-Zs-hMh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ii-JR-uSd">
                                 <rect key="frame" x="37" y="251" width="300" height="70"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Yes, but not all">
+                                    <color key="titleColor" red="0.28627450980000002" green="0.40784313729999999" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Ah7-4n-0Wa" kind="show" id="4Sb-F5-VMz"/>
+                                    <segue destination="Ah7-4n-0Wa" kind="show" id="VJO-gf-xZY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2E-mb-ErF">
                                 <rect key="frame" x="37" y="329" width="300" height="70"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="No">
+                                    <color key="titleColor" red="0.28627450980000002" green="0.40784313729999999" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Ah7-4n-0Wa" kind="show" id="YVU-fQ-E4A"/>
+                                    <segue destination="Ah7-4n-0Wa" kind="show" id="Wdw-HO-zd9"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Did you take your medication today?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gP-ON-u1Z">
@@ -473,9 +476,19 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Great!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5S4-AD-Qe4">
+                                <rect key="frame" x="108" y="424" width="158" height="55"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="textColor" red="0.98039215686274506" green="0.52941176470588236" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="labelResponseGreat" destination="5S4-AD-Qe4" id="r0O-wI-lkq"/>
+                        <segue destination="Ah7-4n-0Wa" kind="show" identifier="medicationsTakenToDay" id="78U-ki-3tU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kVN-CZ-F4g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -491,6 +504,6 @@
         <image name="Terrible" width="643" height="643"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="YVU-fQ-E4A"/>
+        <segue reference="78U-ki-3tU"/>
     </inferredMetricsTieBreakers>
 </document>

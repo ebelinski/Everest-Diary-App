@@ -10,9 +10,28 @@ import UIKit
 
 class MedicationsTakenViewController: UIViewController {
 
+    @IBOutlet var labelResponseGreat: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        labelResponseGreat.alpha = 0
+    }
+    
+    @IBAction func didPressYesAll(sender: AnyObject) {
+        
+        
+        UIView.animateWithDuration(0.5, animations: {
+            self.labelResponseGreat.alpha = 1
+        })
+        
+        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(1.5 * Double(NSEC_PER_SEC)))
+        dispatch_after(delayTime, dispatch_get_main_queue()) {
+            self.goToNextPage()
+        }
+    }
+    
+    func goToNextPage() {
+        self.performSegueWithIdentifier("medicationsTakenToDay", sender: self)
     }
 }
