@@ -253,6 +253,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
+                                    <action selector="symptomEditingChanged:" destination="LBK-7g-VIu" eventType="editingChanged" id="CGn-UQ-GIA"/>
                                     <action selector="symptomEditingDidBegin:" destination="LBK-7g-VIu" eventType="editingDidBegin" id="zHR-ra-bdM"/>
                                     <action selector="symptomEditingDidEnd:" destination="LBK-7g-VIu" eventType="editingDidEnd" id="8rd-9U-vTo"/>
                                 </connections>

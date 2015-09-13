@@ -11,6 +11,7 @@ import UIKit
 class SymptomsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var symptoms: [String] = [String]()
+    var filteredSymptoms: [String] = [String]()
 
     @IBOutlet var textFieldSymptom1: UITextField!
     var symptomsPicker: UITableView?
@@ -302,7 +303,8 @@ class SymptomsViewController: UIViewController, UITableViewDataSource, UITableVi
             name: UIKeyboardWillHideNotification,
             object: nil)
         
-//        let symptomsPickerVC = self.storyboard!.instantiateViewControllerWithIdentifier("symptomstableviewcontroller") as! SymptomsTableViewController
+        filteredSymptoms = symptoms
+        
         symptomsPicker = UITableView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 44*3))
         symptomsPicker?.registerClass(UITableViewCell.classForCoder(), forCellReuseIdentifier: "normalcell")
         symptomsPicker?.dataSource = self
@@ -345,6 +347,20 @@ class SymptomsViewController: UIViewController, UITableViewDataSource, UITableVi
         
     }
     
+    @IBAction func symptomEditingChanged(sender: AnyObject) {
+        let search = (sender as! UITextField).text.lowercaseString
+        
+        filteredSymptoms = [String]()
+        
+        for symptom in symptoms {
+            if symptom.lowercaseString.rangeOfString(search) != nil {
+                filteredSymptoms.append(symptom)
+            }
+        }
+        
+        symptomsPicker?.reloadData()
+    }
+    
     @IBAction func symptomEditingDidEnd(sender: AnyObject) {
         
     }
@@ -356,14 +372,13 @@ class SymptomsViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return symptoms.count
+        return filteredSymptoms.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("normalcell", forIndexPath: indexPath) as! UITableViewCell
         
-        println(symptoms[indexPath.row])
-        cell.textLabel!.text = symptoms[indexPath.row]
+        cell.textLabel!.text = filteredSymptoms[indexPath.row]
         
         return cell
     }
