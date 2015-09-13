@@ -27,7 +27,7 @@ class SymptomsViewController: UIViewController, UITableViewDataSource, UITableVi
         symptoms = [
             "Abdominal pain",
             "Acid feeling",
-            "Acid reflux ",
+            "Acid reflux",
             "Ache",
             "Acne - excessive",
             "Alcohol withdrawal",
@@ -49,7 +49,7 @@ class SymptomsViewController: UIViewController, UITableViewDataSource, UITableVi
             "Blood in semen",
             "Blood in urine",
             "Blood in stool",
-            "Blood in sputum (cough mucus) ",
+            "Blood in sputum (cough mucus)",
             "Bloody nose",
             "Blurry vision",
             "Breast discharge (not nipple)",
@@ -65,7 +65,7 @@ class SymptomsViewController: UIViewController, UITableViewDataSource, UITableVi
             "Chills",
             "Cloudy urine",
             "Cold",
-            "Cold fingers ",
+            "Cold fingers",
             "Cold feet",
             "Cold hands",
             "Cold sore",
@@ -159,7 +159,7 @@ class SymptomsViewController: UIViewController, UITableViewDataSource, UITableVi
             "Lazy eye",
             "Leg pain",
             "Leg soreness",
-            "Libido - lower ",
+            "Libido - lower",
             "Libido - higher",
             "Lifting arm difficulty",
             "Lifting leg difficulty",
@@ -176,7 +176,7 @@ class SymptomsViewController: UIViewController, UITableViewDataSource, UITableVi
             "Menstruation - excessive bleeding",
             "Menstruation - late",
             "Metal taste in mouth",
-            "Migraine (one sided) ",
+            "Migraine (one sided)",
             "Missed period",
             "Mood swings",
             "Morning sickness",
@@ -224,7 +224,7 @@ class SymptomsViewController: UIViewController, UITableViewDataSource, UITableVi
             "Ringing - ears",
             "Runny nose",
             "Seizure",
-            "Shakiness - hands ",
+            "Shakiness - hands",
             "Shakiness - other",
             "Shortness of breath",
             "Sinus pain",
@@ -241,7 +241,7 @@ class SymptomsViewController: UIViewController, UITableViewDataSource, UITableVi
             "Stool frequency change",
             "Sputum - clear",
             "Sputum - yellow",
-            "Sputum - other ",
+            "Sputum - other",
             "Suicidal ideation",
             "Sunburn",
             "Sweat - excessive",
@@ -406,5 +406,13 @@ class SymptomsViewController: UIViewController, UITableViewDataSource, UITableVi
         }
         
         resignAll()
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "symptomsToDescribeSymptoms" {
+            (segue.destinationViewController as! SymptomsDescribeViewController).symptom1 = textFieldSymptom1.text
+            (segue.destinationViewController as! SymptomsDescribeViewController).symptom2 = textFieldSymptom2.text
+            (segue.destinationViewController as! SymptomsDescribeViewController).symptom3 = textFieldSymptom3.text
+        }
     }
 }

@@ -10,10 +10,20 @@ import UIKit
 
 class SymptomsDescribeViewController: UIViewController {
 
+    @IBOutlet var labelSymptom1: UILabel!
+    @IBOutlet var labelSymptom2: UILabel!
+    @IBOutlet var labelSymptom3: UILabel!
+    
+    var symptom1: String!
+    var symptom2: String!
+    var symptom3: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        labelSymptom1.text = symptom1
+        labelSymptom2.text = symptom2
+        labelSymptom3.text = symptom3
     }
 
 }
