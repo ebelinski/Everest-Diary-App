@@ -478,7 +478,7 @@
                                     <action selector="didPressDoneButton:" destination="YsW-VX-oMf" eventType="touchUpInside" id="5u5-el-UfS"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FKP-eZ-Qi0">
+                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="media-big" translatesAutoresizingMaskIntoConstraints="NO" id="FKP-eZ-Qi0">
                                 <rect key="frame" x="16" y="86" width="163.5" height="164"/>
                                 <color key="backgroundColor" red="0.88699494949494939" green="0.88699494949494939" blue="0.88699494949494939" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
@@ -491,7 +491,7 @@
                                     <action selector="didPressMediaButton:" destination="YsW-VX-oMf" eventType="touchUpInside" id="ZJ3-WJ-oMI"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4qI-lN-O9s">
+                            <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="media-big" translatesAutoresizingMaskIntoConstraints="NO" id="4qI-lN-O9s">
                                 <rect key="frame" x="195" y="86" width="163.5" height="164"/>
                                 <color key="backgroundColor" red="0.88699494949494939" green="0.88699494949494939" blue="0.88699494949494939" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
@@ -504,7 +504,7 @@
                                     <action selector="didPressMediaButton:" destination="YsW-VX-oMf" eventType="touchUpInside" id="m5F-fF-hf6"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Nr-zI-OOi">
+                            <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="media-big" translatesAutoresizingMaskIntoConstraints="NO" id="2Nr-zI-OOi">
                                 <rect key="frame" x="16" y="267" width="163.5" height="164"/>
                                 <color key="backgroundColor" red="0.88699494949494939" green="0.88699494949494939" blue="0.88699494949494939" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
@@ -517,7 +517,7 @@
                                     <action selector="didPressMediaButton:" destination="YsW-VX-oMf" eventType="touchUpInside" id="mAM-oY-wxX"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wEM-B7-nnD">
+                            <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="media-big" translatesAutoresizingMaskIntoConstraints="NO" id="wEM-B7-nnD">
                                 <rect key="frame" x="195" y="267" width="163.5" height="164"/>
                                 <color key="backgroundColor" red="0.88699494949494939" green="0.88699494949494939" blue="0.88699494949494939" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
@@ -752,6 +752,7 @@
         <image name="bad2thebone" width="108" height="108"/>
         <image name="badge" width="189" height="178"/>
         <image name="gr8" width="108" height="108"/>
+        <image name="media-big" width="600" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="xke-H5-waX"/>
