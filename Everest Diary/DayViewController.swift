@@ -37,7 +37,7 @@ class DayViewController: UIViewController {
         buttonPainYes.hidden = false
         buttonPainNo.hidden = false
         
-        UIView.animateWithDuration(1, animations: {
+        UIView.animateWithDuration(0.5, animations: {
             self.labelPainQuestion.alpha = 1
             self.buttonPainYes.alpha = 1
             self.buttonPainNo.alpha = 1

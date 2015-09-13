@@ -333,7 +333,7 @@ class SymptomsViewController: UIViewController, UITableViewDataSource, UITableVi
         if let symptomsPicker = symptomsPicker {
             symptomsPicker.reloadData()
             symptomsPicker.hidden = false
-            UIView.animateWithDuration(1, animations: {
+            UIView.animateWithDuration(0.5, animations: {
                 symptomsPicker.alpha = 1
             })
         }
