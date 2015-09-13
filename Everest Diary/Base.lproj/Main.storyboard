@@ -476,11 +476,73 @@
                                     <action selector="didPressDoneButton:" destination="YsW-VX-oMf" eventType="touchUpInside" id="5u5-el-UfS"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FKP-eZ-Qi0">
+                                <rect key="frame" x="16" y="86" width="163.5" height="164"/>
+                                <color key="backgroundColor" red="0.88699494949494939" green="0.88699494949494939" blue="0.88699494949494939" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVR-Zd-Cgp">
+                                <rect key="frame" x="16" y="86" width="163.5" height="164"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressMediaButton:" destination="YsW-VX-oMf" eventType="touchUpInside" id="ZJ3-WJ-oMI"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4qI-lN-O9s">
+                                <rect key="frame" x="195" y="86" width="163.5" height="164"/>
+                                <color key="backgroundColor" red="0.88699494949494939" green="0.88699494949494939" blue="0.88699494949494939" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bE5-zC-uHR">
+                                <rect key="frame" x="195" y="86" width="163.5" height="164"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressMediaButton:" destination="YsW-VX-oMf" eventType="touchUpInside" id="m5F-fF-hf6"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Nr-zI-OOi">
+                                <rect key="frame" x="16" y="267" width="163.5" height="164"/>
+                                <color key="backgroundColor" red="0.88699494949494939" green="0.88699494949494939" blue="0.88699494949494939" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLs-F7-dGu">
+                                <rect key="frame" x="16" y="267" width="163.5" height="164"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressMediaButton:" destination="YsW-VX-oMf" eventType="touchUpInside" id="mAM-oY-wxX"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wEM-B7-nnD">
+                                <rect key="frame" x="195" y="267" width="163.5" height="164"/>
+                                <color key="backgroundColor" red="0.88699494949494939" green="0.88699494949494939" blue="0.88699494949494939" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wal-Nf-DJq">
+                                <rect key="frame" x="195" y="267" width="163.5" height="164"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressMediaButton:" destination="YsW-VX-oMf" eventType="touchUpInside" id="zBg-Ff-wYo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Media" id="nuZ-je-uSy"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="button1" destination="QVR-Zd-Cgp" id="sBU-4L-lG1"/>
+                        <outlet property="button2" destination="bE5-zC-uHR" id="BJm-cn-I9T"/>
+                        <outlet property="button3" destination="LLs-F7-dGu" id="hQC-OX-bME"/>
+                        <outlet property="button4" destination="Wal-Nf-DJq" id="0XS-Je-dZ1"/>
+                        <outlet property="imageView1" destination="FKP-eZ-Qi0" id="fx5-Qc-mFX"/>
+                        <outlet property="imageView2" destination="4qI-lN-O9s" id="Q0B-25-BJZ"/>
+                        <outlet property="imageView3" destination="2Nr-zI-OOi" id="aId-7n-KY4"/>
+                        <outlet property="imageView4" destination="wEM-B7-nnD" id="EY1-nF-yhv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dz5-LM-m0z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
