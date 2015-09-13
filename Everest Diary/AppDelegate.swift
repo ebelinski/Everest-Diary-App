@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import Parse
-import Bolts
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,9 +14,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        Parse.setApplicationId("CVQ42PaStVGW9M12NMARiu55LskXSC9tvEvymHaP",
-            clientKey: "58IiCEDYPLzt1TbLylXCPfCcH6jdxWGjRsQWQxVl")
-        
         return true
     }
 
