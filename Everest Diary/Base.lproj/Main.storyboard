@@ -520,6 +520,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="3lm-Rz-vti" kind="show" id="T7h-uw-tMf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFr-pC-b3f">
                                 <rect key="frame" x="16" y="345" width="343" height="80"/>
@@ -548,6 +551,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MLi-hP-RPd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="421.5" y="20.5"/>
+        </scene>
+        <!--Medical History-->
+        <scene sceneID="3nV-ca-Qem">
+            <objects>
+                <viewController id="3lm-Rz-vti" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JY5-aX-XMH"/>
+                        <viewControllerLayoutGuide type="bottom" id="lBI-So-1K6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dLT-kd-Iko">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2015-09-13 at 10.26.56 AM" translatesAutoresizingMaskIntoConstraints="NO" id="AgE-As-VVe">
+                                <rect key="frame" x="28" y="90" width="319" height="350"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Medical History" id="op9-KW-037"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zeb-h2-gCr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="421.5" y="806.5"/>
         </scene>
         <!--Medication-->
         <scene sceneID="Y3c-3S-1jO">
@@ -626,6 +653,7 @@
         <image name="EverestWelcome" width="2100" height="1037"/>
         <image name="Great" width="643" height="643"/>
         <image name="ManFrontWhite" width="577" height="1158"/>
+        <image name="Screen Shot 2015-09-13 at 10.26.56 AM" width="606" height="660"/>
         <image name="SoSo" width="643" height="643"/>
         <image name="Terrible" width="643" height="643"/>
     </resources>
