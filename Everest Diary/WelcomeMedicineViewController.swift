@@ -14,8 +14,14 @@ class WelcomeMedicineViewController: UIViewController, UIPickerViewDataSource, U
     
     var medicationFrequencyData: [String] = [String]()
     
+    @IBOutlet var textFieldMedication: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var tap: UITapGestureRecognizer = UITapGestureRecognizer(
+            target: self, action: "resignAll")
+        view.addGestureRecognizer(tap)
 
         medicationFrequencyData = [
             "Twice a Day",
@@ -26,6 +32,10 @@ class WelcomeMedicineViewController: UIViewController, UIPickerViewDataSource, U
         
         pickerMedicationFrequency.dataSource = self
         pickerMedicationFrequency.delegate = self
+    }
+    
+    func resignAll() {
+        self.textFieldMedication.resignFirstResponder()
     }
     
     // The number of columns of data
