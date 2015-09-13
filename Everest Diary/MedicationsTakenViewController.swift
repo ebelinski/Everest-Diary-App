@@ -2,7 +2,7 @@
 //  MedicationsTakenViewController.swift
 //  Everest Diary
 //
-//  Created by HHWS on 12/9/15.
+//  Created by Eugene Belinski on 12/9/15.
 //  Copyright (c) 2015 Everest Team. All rights reserved.
 //
 
@@ -19,8 +19,6 @@ class MedicationsTakenViewController: UIViewController {
     }
     
     @IBAction func didPressYesAll(sender: AnyObject) {
-        
-        
         UIView.animateWithDuration(0.5, animations: {
             self.labelResponseGreat.alpha = 1
         })

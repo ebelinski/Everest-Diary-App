@@ -33,6 +33,7 @@
 		B6313DB11BA4BB5C009DA8E8 /* BodyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6313DB01BA4BB5C009DA8E8 /* BodyImageView.swift */; };
 		B6313DB41BA4C75F009DA8E8 /* BodyDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6313DB31BA4C75F009DA8E8 /* BodyDotView.swift */; };
 		B6ECA31F1BA5215B00910998 /* MedicationsTakenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6ECA31E1BA5215B00910998 /* MedicationsTakenViewController.swift */; };
+		B6ECA3211BA52CFA00910998 /* WelcomeMedicineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6ECA3201BA52CFA00910998 /* WelcomeMedicineViewController.swift */; };
 		C7756FF59C5C54343A926A8A /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A3FDE3BFB7AD154B31468C /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -80,6 +81,7 @@
 		B6313DB01BA4BB5C009DA8E8 /* BodyImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyImageView.swift; sourceTree = "<group>"; };
 		B6313DB31BA4C75F009DA8E8 /* BodyDotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyDotView.swift; sourceTree = "<group>"; };
 		B6ECA31E1BA5215B00910998 /* MedicationsTakenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicationsTakenViewController.swift; sourceTree = "<group>"; };
+		B6ECA3201BA52CFA00910998 /* WelcomeMedicineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeMedicineViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				B6313D8D1BA481B4009DA8E8 /* WelcomeViewController.swift */,
+				B6ECA3201BA52CFA00910998 /* WelcomeMedicineViewController.swift */,
 				B6313D6D1BA4804D009DA8E8 /* HomeViewController.swift */,
 				B6ECA31E1BA5215B00910998 /* MedicationsTakenViewController.swift */,
 				B6313D6F1BA4804D009DA8E8 /* DayViewController.swift */,
@@ -389,6 +392,7 @@
 				B6313D691BA4804D009DA8E8 /* AppDelegate.swift in Sources */,
 				B6313D931BA4851A009DA8E8 /* SymptomsViewController.swift in Sources */,
 				B6313D6E1BA4804D009DA8E8 /* HomeViewController.swift in Sources */,
+				B6ECA3211BA52CFA00910998 /* WelcomeMedicineViewController.swift in Sources */,
 				B6313DB11BA4BB5C009DA8E8 /* BodyImageView.swift in Sources */,
 				B6ECA31F1BA5215B00910998 /* MedicationsTakenViewController.swift in Sources */,
 				B6313DB41BA4C75F009DA8E8 /* BodyDotView.swift in Sources */,
