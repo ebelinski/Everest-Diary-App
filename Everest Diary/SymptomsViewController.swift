@@ -309,7 +309,8 @@ class SymptomsViewController: UIViewController, UITableViewDataSource, UITableVi
         
         filteredSymptoms = symptoms
         
-        symptomsPicker = UITableView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 44*3))
+        symptomsPicker = UITableView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 44*5
+            ))
         symptomsPicker?.registerClass(UITableViewCell.classForCoder(), forCellReuseIdentifier: "normalcell")
         symptomsPicker?.delegate = self
         symptomsPicker?.allowsSelection = true
@@ -326,9 +327,9 @@ class SymptomsViewController: UIViewController, UITableViewDataSource, UITableVi
         let keyboardHeight = kbSize!.height
         symptomsPicker?.frame = CGRect(
             x: 0,
-            y: self.view.frame.height - keyboardHeight - 44*3,
+            y: self.view.frame.height - keyboardHeight - 44*5,
             width: self.view.frame.width,
-            height: 44*3)
+            height: 44*5)
         
         if let symptomsPicker = symptomsPicker {
             symptomsPicker.reloadData()
