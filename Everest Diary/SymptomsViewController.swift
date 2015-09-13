@@ -313,7 +313,6 @@ class SymptomsViewController: UIViewController, UITableViewDataSource, UITableVi
         let keyboardHeight = kbSize!.height
         
         if let symptomsPicker = symptomsPicker {
-            
         } else {
             symptomsPicker = UITableView(frame: CGRect(
                 x: 0,
@@ -394,6 +393,7 @@ class SymptomsViewController: UIViewController, UITableViewDataSource, UITableVi
         let cell = tableView.dequeueReusableCellWithIdentifier("normalcell", forIndexPath: indexPath) as! UITableViewCell
         
         cell.textLabel!.text = filteredSymptoms[indexPath.row]
+        cell.backgroundColor = UIColor(red: 0.96, green: 0.96, blue: 0.96, alpha: 1)
         
         return cell
     }
