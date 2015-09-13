@@ -178,7 +178,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lrm-kH-fPn" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="880.5" y="20.5"/>
+            <point key="canvasLocation" x="1336.5" y="20.5"/>
         </scene>
         <!--Body-->
         <scene sceneID="KpT-bd-QWH">
@@ -209,6 +209,12 @@
                                     <constraint firstAttribute="width" secondItem="yLd-Ab-azr" secondAttribute="height" multiplier="122:245" id="sU0-5k-ZkZ"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2e-Ak-aLG">
+                                <rect key="frame" x="25" y="98" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -225,7 +231,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3dz-Ui-I5s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1359.5" y="20.5"/>
+            <point key="canvasLocation" x="1815.5" y="20.5"/>
         </scene>
         <!--Symptoms-->
         <scene sceneID="rSX-2K-U1Q">
@@ -292,7 +298,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GQO-wR-54m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1831.5" y="20.5"/>
+            <point key="canvasLocation" x="2287.5" y="20.5"/>
         </scene>
         <!--Symptoms Descriptions-->
         <scene sceneID="I9H-C1-IoT">
@@ -327,7 +333,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RUy-fU-uYt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2316.5" y="20.5"/>
+            <point key="canvasLocation" x="2772.5" y="20.5"/>
         </scene>
         <!--Symptoms Media-->
         <scene sceneID="hy8-hn-r6Y">
@@ -362,7 +368,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dz5-LM-m0z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2783.5" y="20.5"/>
+            <point key="canvasLocation" x="3239.5" y="20.5"/>
         </scene>
         <!--Home-->
         <scene sceneID="eoq-hB-Rv1">
@@ -391,7 +397,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Ah7-4n-0Wa" kind="show" id="UXU-4h-VKP"/>
+                                    <segue destination="UiT-bk-zJd" kind="show" id="3TS-i5-j4P"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYu-ch-y4P">
@@ -419,6 +425,62 @@
             </objects>
             <point key="canvasLocation" x="421.5" y="20.5"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Y3c-3S-1jO">
+            <objects>
+                <viewController id="UiT-bk-zJd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iRK-ko-rk9"/>
+                        <viewControllerLayoutGuide type="bottom" id="XGY-Vk-ufd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vrg-kC-NZW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68S-3V-6aG">
+                                <rect key="frame" x="37" y="173" width="300" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Yes, all">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ah7-4n-0Wa" kind="show" id="1q0-7u-EOR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ii-JR-uSd">
+                                <rect key="frame" x="37" y="251" width="300" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Yes, but not all">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ah7-4n-0Wa" kind="show" id="4Sb-F5-VMz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2E-mb-ErF">
+                                <rect key="frame" x="37" y="329" width="300" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="No">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ah7-4n-0Wa" kind="show" id="YVU-fQ-E4A"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Did you take your medication today?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gP-ON-u1Z">
+                                <rect key="frame" x="31" y="119" width="313" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kVN-CZ-F4g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="881.5" y="20.5"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Bad" width="643" height="643"/>
@@ -428,4 +490,7 @@
         <image name="SoSo" width="643" height="643"/>
         <image name="Terrible" width="643" height="643"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="YVU-fQ-E4A"/>
+    </inferredMetricsTieBreakers>
 </document>
