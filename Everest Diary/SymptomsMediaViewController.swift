@@ -14,6 +14,7 @@ class SymptomsMediaViewController: UIViewController, UINavigationControllerDeleg
     @IBOutlet var imageView2: UIImageView!
     @IBOutlet var imageView3: UIImageView!
     @IBOutlet var imageView4: UIImageView!
+    var activeImageView: UIImageView?
     
     @IBOutlet var button1: UIButton!
     @IBOutlet var button2: UIButton!
@@ -27,6 +28,15 @@ class SymptomsMediaViewController: UIViewController, UINavigationControllerDeleg
     }
     
     @IBAction func didPressMediaButton(sender: AnyObject) {
+        let tag = (sender as! UIButton).tag
+        switch tag {
+        case 1: activeImageView = imageView1
+        case 2: activeImageView = imageView2
+        case 3: activeImageView = imageView3
+        case 4: activeImageView = imageView4
+        default: activeImageView = imageView1
+        }
+        
         let menu = UIAlertController(title: "Add Media", message: nil, preferredStyle: .ActionSheet)
         menu.addAction(UIAlertAction(title: "Take a picture", style: UIAlertActionStyle.Default, handler: {
             (action: UIAlertAction!) -> Void in
@@ -66,7 +76,36 @@ class SymptomsMediaViewController: UIViewController, UINavigationControllerDeleg
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
-        println("image chosen")
+        var image = info[UIImagePickerControllerOriginalImage] as! UIImage
+        
+        var tempImage: UIImage!
+        let targetSize = CGSizeMake(300, (300*(image.size.height/image.size.width)))
+        UIGraphicsBeginImageContext(targetSize)
+        
+        var thumbnailRect = CGRectMake(0, 0, 0, 0)
+        thumbnailRect.origin = CGPointMake(0, 0)
+        thumbnailRect.size.width = targetSize.width
+        thumbnailRect.size.height = targetSize.height
+        image.drawInRect(thumbnailRect)
+        tempImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        image = tempImage
+        
+        let imageSize = image.size
+        let newDimension = min(imageSize.width, imageSize.height)
+        let widthOffset = (imageSize.width - newDimension) / 2
+        let heightOffset = (imageSize.height - newDimension) / 2
+        UIGraphicsBeginImageContextWithOptions(CGSizeMake(newDimension, newDimension), false, 0)
+        image.drawAtPoint(CGPointMake(-widthOffset, -heightOffset), blendMode: kCGBlendModeCopy, alpha: 1)
+        image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        if let activeImageView = activeImageView {
+            activeImageView.image = image
+        }
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     @IBAction func didPressDoneButton(sender: AnyObject) {
