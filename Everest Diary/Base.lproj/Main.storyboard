@@ -7,7 +7,7 @@
         <!--Welcome View Controller-->
         <scene sceneID="sKn-4k-Q3w">
             <objects>
-                <viewController id="lsl-xq-vDW" customClass="WelcomeViewController" customModule="Everest_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lsl-xq-vDW" customClass="WelcomeViewController" customModule="Everest__Health" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="921-FN-GwD"/>
                         <viewControllerLayoutGuide type="bottom" id="Hmc-VA-XTn"/>
@@ -65,7 +65,7 @@
         <!--Welcome Medicine View Controller-->
         <scene sceneID="xEU-AU-zJh">
             <objects>
-                <viewController id="Wk4-sV-uio" customClass="WelcomeMedicineViewController" customModule="Everest_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Wk4-sV-uio" customClass="WelcomeMedicineViewController" customModule="Everest__Health" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fcA-gA-5TW"/>
                         <viewControllerLayoutGuide type="bottom" id="exI-xY-YPY"/>
@@ -160,7 +160,7 @@
         <!--Day First Page-->
         <scene sceneID="Cn3-H9-jdl">
             <objects>
-                <viewController title="Day First Page" id="Ah7-4n-0Wa" customClass="DayViewController" customModule="Everest_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Day First Page" id="Ah7-4n-0Wa" customClass="DayViewController" customModule="Everest__Health" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cIm-e0-J51"/>
                         <viewControllerLayoutGuide type="bottom" id="a0L-h9-sNL"/>
@@ -262,7 +262,7 @@
         <!--Body-->
         <scene sceneID="KpT-bd-QWH">
             <objects>
-                <viewController title="Body" id="sTu-Vz-i3u" customClass="BodyViewController" customModule="Everest_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Body" id="sTu-Vz-i3u" customClass="BodyViewController" customModule="Everest__Health" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EpJ-O5-CGE"/>
                         <viewControllerLayoutGuide type="bottom" id="abR-Tk-R8z"/>
@@ -282,7 +282,7 @@
                                     <segue destination="LBK-7g-VIu" kind="show" id="3nQ-KQ-NdG"/>
                                 </connections>
                             </button>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ManFrontWhite" translatesAutoresizingMaskIntoConstraints="NO" id="yLd-Ab-azr" customClass="BodyImageView" customModule="Everest_Diary" customModuleProvider="target">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ManFrontWhite" translatesAutoresizingMaskIntoConstraints="NO" id="yLd-Ab-azr" customClass="BodyImageView" customModule="Everest__Health" customModuleProvider="target">
                                 <rect key="frame" x="78" y="80" width="219" height="441"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
@@ -310,7 +310,7 @@
         <!--Symptoms-->
         <scene sceneID="rSX-2K-U1Q">
             <objects>
-                <viewController title="Symptoms" id="LBK-7g-VIu" customClass="SymptomsViewController" customModule="Everest_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Symptoms" id="LBK-7g-VIu" customClass="SymptomsViewController" customModule="Everest__Health" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7vS-yr-vjm"/>
                         <viewControllerLayoutGuide type="bottom" id="RYe-1u-8RQ"/>
@@ -381,7 +381,7 @@
         <!--Symptoms Descriptions-->
         <scene sceneID="I9H-C1-IoT">
             <objects>
-                <viewController title="Symptoms Descriptions" id="In4-w2-j8L" customClass="SymptomsDescribeViewController" customModule="Everest_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Symptoms Descriptions" id="In4-w2-j8L" customClass="SymptomsDescribeViewController" customModule="Everest__Health" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XN5-0q-sHR"/>
                         <viewControllerLayoutGuide type="bottom" id="G8Z-Ui-Kcm"/>
@@ -458,7 +458,7 @@
         <!--Symptoms Media-->
         <scene sceneID="hy8-hn-r6Y">
             <objects>
-                <viewController title="Symptoms Media" id="YsW-VX-oMf" customClass="SymptomsMediaViewController" customModule="Everest_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Symptoms Media" id="YsW-VX-oMf" customClass="SymptomsMediaViewController" customModule="Everest__Health" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PmM-RP-tU7"/>
                         <viewControllerLayoutGuide type="bottom" id="ptR-We-GZ3"/>
@@ -553,7 +553,7 @@
         <!--Home-->
         <scene sceneID="eoq-hB-Rv1">
             <objects>
-                <viewController id="jMs-5V-ecB" customClass="HomeViewController" customModule="Everest_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jMs-5V-ecB" customClass="HomeViewController" customModule="Everest__Health" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BZ9-z7-CeJ"/>
                         <viewControllerLayoutGuide type="bottom" id="3VJ-nR-8dL"/>
@@ -631,8 +631,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2015-09-13 at 10.26.56 AM" translatesAutoresizingMaskIntoConstraints="NO" id="AgE-As-VVe">
-                                <rect key="frame" x="28" y="90" width="319" height="350"/>
+                                <rect key="frame" x="28" y="78" width="319" height="350"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Badges" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88r-p3-Fvy">
+                                <rect key="frame" x="28" y="511" width="319" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="badge" translatesAutoresizingMaskIntoConstraints="NO" id="FkB-4R-3Ah">
+                                <rect key="frame" x="22" y="549" width="85" height="80"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dc4-pO-ArT">
+                                <rect key="frame" x="59" y="469" width="256" height="30"/>
+                                <state key="normal" title="Compare Yourself to Previous History">
+                                    <color key="titleColor" red="0.36078431370000003" green="0.49019607840000001" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wnj-YL-Hn2">
+                                <rect key="frame" x="61" y="439" width="252" height="30"/>
+                                <state key="normal" title="Compare Yourself to Your Local Area">
+                                    <color key="titleColor" red="0.36078431370000003" green="0.49019607840000001" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -645,7 +668,7 @@
         <!--Medication-->
         <scene sceneID="Y3c-3S-1jO">
             <objects>
-                <viewController id="UiT-bk-zJd" customClass="MedicationsTakenViewController" customModule="Everest_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="UiT-bk-zJd" customClass="MedicationsTakenViewController" customModule="Everest__Health" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iRK-ko-rk9"/>
                         <viewControllerLayoutGuide type="bottom" id="XGY-Vk-ufd"/>
@@ -727,6 +750,7 @@
         <image name="SoSo-1" width="108" height="108"/>
         <image name="Terrrrible" width="108" height="108"/>
         <image name="bad2thebone" width="108" height="108"/>
+        <image name="badge" width="189" height="178"/>
         <image name="gr8" width="108" height="108"/>
     </resources>
     <inferredMetricsTieBreakers>
