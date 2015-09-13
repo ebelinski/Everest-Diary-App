@@ -42,6 +42,10 @@ class WelcomeViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         pickerDoctorVisitFrequency.dataSource = self
     }
     
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
+    
     @IBAction func didPressBegin(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
@@ -67,6 +71,16 @@ class WelcomeViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         } else {
             return doctorVisitFrequencyData[row]
         }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "welcomeToMedicine" {
+            (segue.destinationViewController as! WelcomeMedicineViewController).welcomeVC = self
+        }
+    }
+    
+    func dismiss() {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 
 }

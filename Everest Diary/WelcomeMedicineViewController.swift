@@ -9,12 +9,13 @@
 import UIKit
 
 class WelcomeMedicineViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
-
+    
+    var welcomeVC: WelcomeViewController?
+    
+    @IBOutlet var textFieldMedication: UITextField!
     @IBOutlet var pickerMedicationFrequency: UIPickerView!
     
     var medicationFrequencyData: [String] = [String]()
-    
-    @IBOutlet var textFieldMedication: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +52,11 @@ class WelcomeMedicineViewController: UIViewController, UIPickerViewDataSource, U
     // The data to return for the row and component (column) that's being passed in
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return medicationFrequencyData[row]
+    }
+    
+    @IBAction func didPressDone(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+        welcomeVC?.dismiss()
     }
     
 }
