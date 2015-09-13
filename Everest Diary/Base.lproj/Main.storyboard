@@ -206,7 +206,7 @@
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qW-W2-gIw">
                                 <rect key="frame" x="71" y="184" width="100" height="100"/>
-                                <state key="normal" title="Good" image="Great">
+                                <state key="normal" title="Good" image="gr8">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -215,7 +215,7 @@
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BuL-qO-Nxj">
                                 <rect key="frame" x="204" y="184" width="100" height="100"/>
-                                <state key="normal" title="Okay" image="SoSo">
+                                <state key="normal" title="Okay" image="SoSo-1">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -224,7 +224,7 @@
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOp-in-gji">
                                 <rect key="frame" x="71" y="313" width="100" height="100"/>
-                                <state key="normal" title="Bad" image="Bad">
+                                <state key="normal" title="Bad" image="bad2thebone">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -233,7 +233,7 @@
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ud-jx-46t">
                                 <rect key="frame" x="204" y="313" width="100" height="100"/>
-                                <state key="normal" title="Terrible" image="Terrible">
+                                <state key="normal" title="Terrible" image="Terrrrible">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -718,14 +718,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Bad" width="643" height="643"/>
         <image name="EverestLogoBlue6big" width="2100" height="1500"/>
         <image name="EverestWelcome" width="2100" height="1037"/>
-        <image name="Great" width="643" height="643"/>
         <image name="ManFrontWhite" width="577" height="1158"/>
         <image name="Screen Shot 2015-09-13 at 10.26.56 AM" width="606" height="660"/>
-        <image name="SoSo" width="643" height="643"/>
-        <image name="Terrible" width="643" height="643"/>
+        <image name="SoSo-1" width="108" height="108"/>
+        <image name="Terrrrible" width="108" height="108"/>
+        <image name="bad2thebone" width="108" height="108"/>
+        <image name="gr8" width="108" height="108"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="78U-ki-3tU"/>
