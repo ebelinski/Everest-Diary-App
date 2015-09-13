@@ -71,6 +71,13 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="yXu-0R-QUA">
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.36078431372549019" green="0.49019607843137253" blue="0.61176470588235299" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="0.0"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="jMs-5V-ecB" kind="relationship" relationship="rootViewController" id="Hmu-Ml-KXM"/>
@@ -108,6 +115,7 @@
                                 <rect key="frame" x="199" y="529" width="100" height="80"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="No">
+                                    <color key="titleColor" red="0.36078431370000003" green="0.49019607840000001" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -118,6 +126,7 @@
                                 <rect key="frame" x="75" y="529" width="100" height="80"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Yes">
+                                    <color key="titleColor" red="0.36078431370000003" green="0.49019607840000001" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -196,6 +205,7 @@
                                 <rect key="frame" x="16" y="589" width="343" height="58"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Next Step">
+                                    <color key="titleColor" red="0.36078431370000003" green="0.49019607840000001" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -209,12 +219,6 @@
                                     <constraint firstAttribute="width" secondItem="yLd-Ab-azr" secondAttribute="height" multiplier="122:245" id="sU0-5k-ZkZ"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2e-Ak-aLG">
-                                <rect key="frame" x="25" y="98" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -279,6 +283,7 @@
                                 <rect key="frame" x="16" y="589" width="343" height="58"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Continue">
+                                    <color key="titleColor" red="0.36078431370000003" green="0.49019607840000001" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -315,6 +320,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O5i-eS-dcd">
                                 <rect key="frame" x="150" y="214" width="75" height="30"/>
                                 <state key="normal" title="Add Media">
+                                    <color key="titleColor" red="0.36078431370000003" green="0.49019607840000001" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -350,6 +356,7 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEL-3L-d0K">
                                 <rect key="frame" x="166" y="214" width="41" height="30"/>
                                 <state key="normal" title="Finish">
+                                    <color key="titleColor" red="0.36078431370000003" green="0.49019607840000001" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -383,16 +390,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EverestLogoBlue6big" translatesAutoresizingMaskIntoConstraints="NO" id="1Lf-gv-u5S">
-                                <rect key="frame" x="45" y="94" width="285" height="203"/>
+                                <rect key="frame" x="45" y="104" width="285" height="203"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="203" id="LU7-IK-Vpe"/>
                                     <constraint firstAttribute="width" constant="285" id="UbY-82-hOw"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFr-pC-b3f">
-                                <rect key="frame" x="86" y="361" width="203" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYu-ch-y4P">
+                                <rect key="frame" x="16" y="433" width="343" height="80"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <state key="normal" title="Log Today">
+                                <state key="normal" title="Log History">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zw3-8g-wdt">
+                                <rect key="frame" x="16" y="521" width="343" height="80"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="Medication History">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFr-pC-b3f">
+                                <rect key="frame" x="16" y="345" width="343" height="80"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="Make a New Log">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -400,19 +423,11 @@
                                     <segue destination="UiT-bk-zJd" kind="show" id="3TS-i5-j4P"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYu-ch-y4P">
-                                <rect key="frame" x="86" y="473" width="203" height="50"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <state key="normal" title="All Logs">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.28627450980392155" green="0.40784313725490196" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="1Lf-gv-u5S" secondAttribute="centerX" id="7Rz-En-Zdo"/>
-                            <constraint firstItem="1Lf-gv-u5S" firstAttribute="top" secondItem="BZ9-z7-CeJ" secondAttribute="bottom" constant="30" id="iHj-QR-fIh"/>
+                            <constraint firstItem="1Lf-gv-u5S" firstAttribute="top" secondItem="BZ9-z7-CeJ" secondAttribute="bottom" constant="40" id="iHj-QR-fIh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="tdD-lI-UA1"/>
@@ -425,7 +440,7 @@
             </objects>
             <point key="canvasLocation" x="421.5" y="20.5"/>
         </scene>
-        <!--Medications Taken View Controller-->
+        <!--Medication-->
         <scene sceneID="Y3c-3S-1jO">
             <objects>
                 <viewController id="UiT-bk-zJd" customClass="MedicationsTakenViewController" customModule="Everest_Diary" customModuleProvider="target" sceneMemberID="viewController">
@@ -441,7 +456,7 @@
                                 <rect key="frame" x="37" y="173" width="300" height="70"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Yes, all">
-                                    <color key="titleColor" red="0.28627450980000002" green="0.40784313729999999" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.36078431372549019" green="0.49019607843137253" blue="0.61176470588235299" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -452,7 +467,7 @@
                                 <rect key="frame" x="37" y="251" width="300" height="70"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Yes, but not all">
-                                    <color key="titleColor" red="0.28627450980000002" green="0.40784313729999999" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.36078431370000003" green="0.49019607840000001" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -463,7 +478,7 @@
                                 <rect key="frame" x="37" y="329" width="300" height="70"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="No">
-                                    <color key="titleColor" red="0.28627450980000002" green="0.40784313729999999" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.36078431370000003" green="0.49019607840000001" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -485,6 +500,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Medication" id="vVY-j4-wnh"/>
                     <connections>
                         <outlet property="labelResponseGreat" destination="5S4-AD-Qe4" id="r0O-wI-lkq"/>
                         <segue destination="Ah7-4n-0Wa" kind="show" identifier="medicationsTakenToDay" id="78U-ki-3tU"/>
