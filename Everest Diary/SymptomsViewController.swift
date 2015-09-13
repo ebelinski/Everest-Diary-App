@@ -14,6 +14,7 @@ class SymptomsViewController: UIViewController, UITableViewDataSource, UITableVi
     var filteredSymptoms: [String] = [String]()
 
     @IBOutlet var textFieldSymptom1: UITextField!
+    var activeTextField: UITextField?
     var symptomsPicker: UITableView?
     
     override func viewDidLoad() {
@@ -291,7 +292,7 @@ class SymptomsViewController: UIViewController, UITableViewDataSource, UITableVi
         
         var tap: UITapGestureRecognizer = UITapGestureRecognizer(
             target: self, action: "resignAll")
-        view.addGestureRecognizer(tap)
+//        view.addGestureRecognizer(tap)
         
         NSNotificationCenter.defaultCenter().addObserver(self,
             selector: Selector("keyboardWasShown:"),
@@ -307,8 +308,9 @@ class SymptomsViewController: UIViewController, UITableViewDataSource, UITableVi
         
         symptomsPicker = UITableView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 44*3))
         symptomsPicker?.registerClass(UITableViewCell.classForCoder(), forCellReuseIdentifier: "normalcell")
-        symptomsPicker?.dataSource = self
         symptomsPicker?.delegate = self
+        symptomsPicker?.allowsSelection = true
+        symptomsPicker?.dataSource = self
         symptomsPicker?.hidden = true
         symptomsPicker?.alpha = 0
         self.view.addSubview(symptomsPicker!)
@@ -344,7 +346,7 @@ class SymptomsViewController: UIViewController, UITableViewDataSource, UITableVi
     }
 
     @IBAction func symptomEditingDidBegin(sender: AnyObject) {
-        
+        activeTextField = (sender as! UITextField)
     }
     
     @IBAction func symptomEditingChanged(sender: AnyObject) {
@@ -366,7 +368,8 @@ class SymptomsViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     @IBAction func symptomEditingDidEnd(sender: AnyObject) {
-        
+        filteredSymptoms = symptoms
+        symptomsPicker?.reloadData()
     }
     
     // MARK: - Table view data source
@@ -385,5 +388,15 @@ class SymptomsViewController: UIViewController, UITableViewDataSource, UITableVi
         cell.textLabel!.text = filteredSymptoms[indexPath.row]
         
         return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let selectionText = filteredSymptoms[indexPath.row]
+        
+        if let activeTextField = activeTextField {
+            activeTextField.text = selectionText
+        }
+        
+        resignAll()
     }
 }
