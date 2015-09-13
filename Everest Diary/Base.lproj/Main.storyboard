@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rS3-R9-Ivy">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Welcome View Controller-->
@@ -283,25 +282,25 @@
                                     <segue destination="LBK-7g-VIu" kind="show" id="3nQ-KQ-NdG"/>
                                 </connections>
                             </button>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ManFrontWhite" translatesAutoresizingMaskIntoConstraints="NO" id="yLd-Ab-azr" customClass="BodyImageView" customModule="Everest_Diary" customModuleProvider="target">
-                                <rect key="frame" x="65" y="80" width="244" height="490"/>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ManFrontWhite" translatesAutoresizingMaskIntoConstraints="NO" id="yLd-Ab-azr" customClass="BodyImageView" customModule="Everest_Diary" customModuleProvider="target">
+                                <rect key="frame" x="78" y="80" width="219" height="441"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="yLd-Ab-azr" secondAttribute="height" multiplier="122:245" id="sU0-5k-ZkZ"/>
-                                </constraints>
                             </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="z83-C1-kq0">
+                                <rect key="frame" x="14" y="551" width="347" height="31"/>
+                                <color key="tintColor" red="1" green="0.20392156859999999" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="didChangePainSliderValue:" destination="sTu-Vz-i3u" eventType="valueChanged" id="vTd-If-0uk"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="yLd-Ab-azr" firstAttribute="top" secondItem="EpJ-O5-CGE" secondAttribute="bottom" constant="16" id="QHI-h0-iSW"/>
-                            <constraint firstItem="abR-Tk-R8z" firstAttribute="top" secondItem="yLd-Ab-azr" secondAttribute="bottom" constant="97" id="gzV-eE-wt9"/>
-                            <constraint firstAttribute="centerX" secondItem="yLd-Ab-azr" secondAttribute="centerX" id="n0k-7F-fJe"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Where is your pain?" id="ghO-Qp-ID1"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="imageBody" destination="yLd-Ab-azr" id="Edq-tA-o5e"/>
+                        <outlet property="painSlider" destination="z83-C1-kq0" id="1Bv-zg-Ox8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3dz-Ui-I5s" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -20,11 +20,12 @@ class BodyImageView: UIImageView {
             let dot = BodyDotView(frame: CGRect(x: point.x-dotSize/2, y: point.y-dotSize/2, width: dotSize, height: dotSize))
             dot.alpha = 0
             UIView.animateWithDuration(1, animations: {
-                dot.alpha = 1
+                dot.alpha = 0.5
             })
             self.addSubview(dot)
             
             if let bodyVC = bodyVC {
+                bodyVC.mostRecentPainPoint = dot
                 bodyVC.createPainPoint(Float(point.x/self.frame.width), percentY: Float(point.y/self.frame.height))
             }
         }
